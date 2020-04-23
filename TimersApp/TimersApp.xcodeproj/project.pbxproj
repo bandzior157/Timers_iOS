@@ -15,6 +15,8 @@
 		5AFF3D602451BDAE00270403 /* TimersAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF3D5F2451BDAE00270403 /* TimersAppTests.swift */; };
 		5AFF3D6D2451EE4B00270403 /* TimersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF3D6C2451EE4B00270403 /* TimersViewController.swift */; };
 		5AFF3D712451F5E400270403 /* TimersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF3D702451F5E400270403 /* TimersViewControllerTests.swift */; };
+		5AFF3D7324522A9500270403 /* TimerTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF3D7224522A9500270403 /* TimerTableViewCellTests.swift */; };
+		5AFF3D7524522B6300270403 /* TimerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF3D7424522B6300270403 /* TimerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		5AFF3D612451BDAE00270403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AFF3D6C2451EE4B00270403 /* TimersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersViewController.swift; sourceTree = "<group>"; };
 		5AFF3D702451F5E400270403 /* TimersViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersViewControllerTests.swift; sourceTree = "<group>"; };
+		5AFF3D7224522A9500270403 /* TimerTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTableViewCellTests.swift; sourceTree = "<group>"; };
+		5AFF3D7424522B6300270403 /* TimerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				5AFF3D6C2451EE4B00270403 /* TimersViewController.swift */,
+				5AFF3D7424522B6300270403 /* TimerTableViewCell.swift */,
 			);
 			path = Timers;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				5AFF3D702451F5E400270403 /* TimersViewControllerTests.swift */,
+				5AFF3D7224522A9500270403 /* TimerTableViewCellTests.swift */,
 			);
 			path = Timers;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 			files = (
 				5AFF3D462451BD7D00270403 /* AppDelegate.swift in Sources */,
 				5AFF3D482451BD7D00270403 /* SceneDelegate.swift in Sources */,
+				5AFF3D7524522B6300270403 /* TimerTableViewCell.swift in Sources */,
 				5AFF3D6D2451EE4B00270403 /* TimersViewController.swift in Sources */,
 				5AFF3D502451BD7D00270403 /* TimersApp.xcdatamodeld in Sources */,
 			);
@@ -247,6 +254,7 @@
 			files = (
 				5AFF3D712451F5E400270403 /* TimersViewControllerTests.swift in Sources */,
 				5AFF3D602451BDAE00270403 /* TimersAppTests.swift in Sources */,
+				5AFF3D7324522A9500270403 /* TimerTableViewCellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
