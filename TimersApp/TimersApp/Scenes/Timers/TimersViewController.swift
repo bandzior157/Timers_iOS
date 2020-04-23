@@ -9,9 +9,7 @@
 import UIKit
 
 class TimersViewController: UITableViewController {
-    
-    private let elements = ["First timer", "Next timer", "Last timer"]
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -19,12 +17,12 @@ class TimersViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        elements.count
+        3
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = TimerTableViewCell()
-        cell.set(for: TimerCellViewModel(nameText: "name", descriptionText: "description"))
+        cell.set(for: TimerCellViewModel(nameText: "Timer name", descriptionText: "Short timer's description placed below title. Also with secondaryLabel font color to separate it from title."))
         return cell
     }
     
