@@ -8,12 +8,24 @@
 
 import UIKit
 
-class TimersViewController: UIViewController {
+class TimersViewController: UITableViewController {
+    
+    private let elements = ["First timer", "Next timer", "Last timer"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         title = "Timers"
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        elements.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = elements[indexPath.row]
+        return cell
     }
     
 }
