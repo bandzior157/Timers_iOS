@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TimersViewController.swift
 //  TimersApp
 //
 //  Created by Łukasz Bazior on 23/04/2020.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class TimersViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemTeal
+        view.backgroundColor = .systemBackground
+        title = "Timers"
     }
-
+    
 }
-
