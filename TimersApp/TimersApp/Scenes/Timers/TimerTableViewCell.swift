@@ -19,6 +19,7 @@ class TimerTableViewCell: UITableViewCell {
     lazy var descriptionLabel: UILabel = {
         var label = UILabel()
         label.textColor = .secondaryLabel
+        label.numberOfLines = 2
         return label
     }()
     
