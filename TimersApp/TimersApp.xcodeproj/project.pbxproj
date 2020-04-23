@@ -14,6 +14,7 @@
 		5AFF3D552451BDA900270403 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF3D532451BDA900270403 /* LaunchScreen.storyboard */; };
 		5AFF3D602451BDAE00270403 /* TimersAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF3D5F2451BDAE00270403 /* TimersAppTests.swift */; };
 		5AFF3D6D2451EE4B00270403 /* TimersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF3D6C2451EE4B00270403 /* TimersViewController.swift */; };
+		5AFF3D712451F5E400270403 /* TimersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF3D702451F5E400270403 /* TimersViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		5AFF3D5F2451BDAE00270403 /* TimersAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersAppTests.swift; sourceTree = "<group>"; };
 		5AFF3D612451BDAE00270403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AFF3D6C2451EE4B00270403 /* TimersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersViewController.swift; sourceTree = "<group>"; };
+		5AFF3D702451F5E400270403 /* TimersViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				5AFF3D5F2451BDAE00270403 /* TimersAppTests.swift */,
+				5AFF3D6E2451F5C300270403 /* Scenes */,
 				5AFF3D612451BDAE00270403 /* Info.plist */,
 			);
 			path = TimersAppTests;
@@ -111,6 +114,22 @@
 			isa = PBXGroup;
 			children = (
 				5AFF3D6C2451EE4B00270403 /* TimersViewController.swift */,
+			);
+			path = Timers;
+			sourceTree = "<group>";
+		};
+		5AFF3D6E2451F5C300270403 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5AFF3D6F2451F5D600270403 /* Timers */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5AFF3D6F2451F5D600270403 /* Timers */ = {
+			isa = PBXGroup;
+			children = (
+				5AFF3D702451F5E400270403 /* TimersViewControllerTests.swift */,
 			);
 			path = Timers;
 			sourceTree = "<group>";
@@ -226,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AFF3D712451F5E400270403 /* TimersViewControllerTests.swift in Sources */,
 				5AFF3D602451BDAE00270403 /* TimersAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
