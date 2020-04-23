@@ -21,3 +21,10 @@ class TimerTableViewCell: UITableViewCell {
     }()
     
 }
+
+extension TimerTableViewCell {
+    func set(for viewModel: TimerCellViewModel) {
+        nameLabel.text = viewModel.nameText
+        descriptionLabel.text = viewModel.descriptionText
+    }
+}
