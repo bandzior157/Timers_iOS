@@ -23,6 +23,14 @@ class TimerTableViewCellTests: XCTestCase {
         XCTAssertEqual(sut.descriptionLabel.text, "CDE")
     }
     
+    func test_setTimerCellViewModel() {
+        let sut = makeSUT()
+        let viewModel = TimerCellViewModel(nameText: "N", descriptionText: "D")
+        sut.set(for: viewModel)
+        XCTAssertEqual(sut.nameLabel.text, "N")
+        XCTAssertEqual(sut.descriptionLabel.text, "D")
+    }
+    
     // MARK: - Helpers
     
     private func makeSUT() -> TimerTableViewCell {

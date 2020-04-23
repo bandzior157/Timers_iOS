@@ -24,7 +24,7 @@ class TimersViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = TimerTableViewCell()
-        cell.textLabel?.text = elements[indexPath.row]
+        cell.set(for: TimerCellViewModel(nameText: "name", descriptionText: "description"))
         return cell
     }
     
