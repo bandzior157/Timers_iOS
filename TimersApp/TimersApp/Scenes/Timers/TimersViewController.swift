@@ -23,7 +23,7 @@ class TimersViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = TimerTableViewCell()
         cell.textLabel?.text = elements[indexPath.row]
         return cell
     }
