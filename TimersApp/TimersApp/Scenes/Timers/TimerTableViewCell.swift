@@ -15,4 +15,9 @@ class TimerTableViewCell: UITableViewCell {
         return label
     }()
     
+    lazy var descriptionLabel: UILabel = {
+        var label = UILabel()
+        return label
+    }()
+    
 }

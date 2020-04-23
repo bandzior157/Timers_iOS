@@ -17,6 +17,12 @@ class TimerTableViewCellTests: XCTestCase {
         XCTAssertEqual(sut.nameLabel.text, "ABC")
     }
     
+    func test_descriptionLabel() {
+        let sut = makeSUT()
+        sut.descriptionLabel.text = "CDE"
+        XCTAssertEqual(sut.descriptionLabel.text, "CDE")
+    }
+    
     // MARK: - Helpers
     
     private func makeSUT() -> TimerTableViewCell {
