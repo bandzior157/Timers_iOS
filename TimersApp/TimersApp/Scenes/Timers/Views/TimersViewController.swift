@@ -14,6 +14,20 @@ class TimersViewController: UITableViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         title = "Timers"
+        
+        setupAddButton()
+    }
+    
+    private func setupAddButton() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(newTimerButtonTapped))
+    }
+    
+    @objc private func newTimerButtonTapped() {
+        let viewController = UIViewController()
+        viewController.title = "New timer"
+        viewController.view.backgroundColor = .systemBackground
+        
+        present(viewController, animated: true, completion: nil)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
