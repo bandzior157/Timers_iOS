@@ -48,18 +48,18 @@ class TimerTableViewCell: UITableViewCell {
     
     private func layout(contentView view: UIView) {
         let margin = CGFloat(12)
-        let superView = safeAreaLayoutGuide
+        let layoutGuide = safeAreaLayoutGuide
+        let constraints = anchorConstraints(view: view, in: layoutGuide, margin: margin)
         
         view.translatesAutoresizingMaskIntoConstraints = false
-        
-        let constraints = [
-            view.topAnchor.constraint(equalTo: superView.topAnchor, constant: margin),
-            view.leftAnchor.constraint(equalTo: superView.leftAnchor, constant: margin),
-            view.rightAnchor.constraint(equalTo: superView.rightAnchor, constant: -margin),
-            view.bottomAnchor.constraint(equalTo: superView.bottomAnchor, constant: -margin)
-        ]
-        
         NSLayoutConstraint.activate(constraints)
+    }
+    
+    private func anchorConstraints(view: UIView, in layoutGuide: UILayoutGuide, margin: CGFloat) -> [NSLayoutConstraint] {
+        [view.topAnchor.constraint(equalTo: layoutGuide.topAnchor, constant: margin),
+        view.leftAnchor.constraint(equalTo: layoutGuide.leftAnchor, constant: margin),
+        view.rightAnchor.constraint(equalTo: layoutGuide.rightAnchor, constant: -margin),
+        view.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: -margin)]
     }
     
 }
