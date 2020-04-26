@@ -23,10 +23,7 @@ class TimersViewController: UITableViewController {
     }
     
     @objc private func newTimerButtonTapped() {
-        let viewController = UIViewController()
-        viewController.title = "New timer"
-        viewController.view.backgroundColor = .systemBackground
-        
+        let viewController = NewTimerViewController()
         present(viewController, animated: true, completion: nil)
     }
     

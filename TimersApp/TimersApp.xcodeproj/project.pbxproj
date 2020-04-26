@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AE5F4592456168A00FD678D /* NewTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5F4582456168A00FD678D /* NewTimerViewController.swift */; };
 		5AFF3D462451BD7D00270403 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF3D452451BD7D00270403 /* AppDelegate.swift */; };
 		5AFF3D482451BD7D00270403 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF3D472451BD7D00270403 /* SceneDelegate.swift */; };
 		5AFF3D502451BD7D00270403 /* TimersApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF3D4E2451BD7D00270403 /* TimersApp.xcdatamodeld */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5AE5F4582456168A00FD678D /* NewTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerViewController.swift; sourceTree = "<group>"; };
 		5AFF3D422451BD7D00270403 /* TimersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFF3D452451BD7D00270403 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AFF3D472451BD7D00270403 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		5AE5F4572456162F00FD678D /* NewTimer */ = {
+			isa = PBXGroup;
+			children = (
+				5AE5F4582456168A00FD678D /* NewTimerViewController.swift */,
+			);
+			path = NewTimer;
+			sourceTree = "<group>";
+		};
 		5AFF3D392451BD7D00270403 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +138,7 @@
 		5AFF3D6A2451EE0B00270403 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				5AE5F4572456162F00FD678D /* NewTimer */,
 				5AFF3D6B2451EE3100270403 /* Timers */,
 			);
 			path = Scenes;
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AFF3D462451BD7D00270403 /* AppDelegate.swift in Sources */,
+				5AE5F4592456168A00FD678D /* NewTimerViewController.swift in Sources */,
 				5AFF3D482451BD7D00270403 /* SceneDelegate.swift in Sources */,
 				5AFF3D7524522B6300270403 /* TimerTableViewCell.swift in Sources */,
 				5AFF3D6D2451EE4B00270403 /* TimersViewController.swift in Sources */,
