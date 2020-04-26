@@ -47,9 +47,7 @@ class TimerTableViewCell: UITableViewCell {
     }
     
     private func layout(contentView view: UIView) {
-        let margin = CGFloat(12)
-        let layoutGuide = safeAreaLayoutGuide
-        let constraints = anchorConstraints(view: view, in: layoutGuide, margin: margin)
+        let constraints = anchorConstraints(view: view, in: safeAreaLayoutGuide, margin: CGFloat(12))
         
         view.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate(constraints)
