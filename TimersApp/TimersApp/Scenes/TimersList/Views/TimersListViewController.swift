@@ -8,8 +8,10 @@
 
 import UIKit
 
-class TimersViewController: UITableViewController {
+class TimersListViewController: UITableViewController {
         
+    var presenter: TimersListPresenter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -23,8 +25,7 @@ class TimersViewController: UITableViewController {
     }
     
     @objc private func newTimerButtonTapped() {
-        let viewController = NewTimerViewController()
-        present(viewController, animated: true, completion: nil)
+        presenter?.newTimerButtonClicked()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
