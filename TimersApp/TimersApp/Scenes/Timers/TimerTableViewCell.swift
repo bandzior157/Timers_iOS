@@ -13,6 +13,7 @@ class TimerTableViewCell: UITableViewCell {
     lazy var nameLabel: UILabel = {
         var label = UILabel()
         label.textColor = .label
+        label.font = .preferredFont(forTextStyle: .headline)
         return label
     }()
     
