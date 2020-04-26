@@ -66,6 +66,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A39C14B24561116004889CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A39C14C2456112C004889CD /* Cells */,
+				5AFF3D6C2451EE4B00270403 /* TimersViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A39C14C2456112C004889CD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5AFF3D7424522B6300270403 /* TimerTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		5AFF3D392451BD7D00270403 = {
 			isa = PBXGroup;
 			children = (
@@ -119,9 +136,8 @@
 		5AFF3D6B2451EE3100270403 /* Timers */ = {
 			isa = PBXGroup;
 			children = (
+				5A39C14B24561116004889CD /* Views */,
 				5AFF3D7624522ED400270403 /* TimerCellViewModel.swift */,
-				5AFF3D6C2451EE4B00270403 /* TimersViewController.swift */,
-				5AFF3D7424522B6300270403 /* TimerTableViewCell.swift */,
 			);
 			path = Timers;
 			sourceTree = "<group>";
