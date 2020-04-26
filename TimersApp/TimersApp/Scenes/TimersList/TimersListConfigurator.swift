@@ -8,8 +8,7 @@
 
 class TimersListConfigurator {
     static func configure(viewController: TimersListViewController) {
-        let router = TheTimersListRouter()
-        router.viewController = viewController
+        let router = TheTimersListRouter(rootViewController: viewController, factory: TheViewControllersFactory())
         
         let presenter = TheTimersListPresenter()
         presenter.router = router

@@ -13,14 +13,20 @@ protocol TimersListRouter {
 }
 
 class TheTimersListRouter: TimersListRouter {
-    weak var viewController: UIViewController?
-
+    weak var rootViewController: UIViewController?
+    private var factory: ViewControllersFactory
+    
+    init(rootViewController: UIViewController, factory: ViewControllersFactory) {
+        self.rootViewController = rootViewController
+        self.factory = factory
+    }
+    
     func routeToNewTimer() {
-        let viewController = NewTimerViewController()
+        let viewController = factory.newTimerViewController() // NewTimerViewController()
         present(viewController)
     }
     
     private func present(_ viewControllerToPresent: UIViewController) {
-        viewController?.present(viewControllerToPresent, animated: true, completion: nil)
+        rootViewController?.present(viewControllerToPresent, animated: false, completion: nil)
     }
 }
