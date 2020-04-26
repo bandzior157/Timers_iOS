@@ -47,7 +47,7 @@ class TimerTableViewCell: UITableViewCell {
     }
     
     private func layout(contentView view: UIView) {
-        let margin = CGFloat(8)
+        let margin = CGFloat(12)
         let superView = safeAreaLayoutGuide
         
         view.translatesAutoresizingMaskIntoConstraints = false
