@@ -20,6 +20,7 @@ class TimerTableViewCell: UITableViewCell {
         var label = UILabel()
         label.textColor = .secondaryLabel
         label.numberOfLines = 2
+        label.font = .preferredFont(forTextStyle: .subheadline)
         return label
     }()
     
