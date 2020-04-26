@@ -43,11 +43,23 @@ class TimerTableViewCell: UITableViewCell {
         addSubview(stackView)
         bringSubviewToFront(stackView)
         
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 8).isActive = true
-        stackView.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 8).isActive = true
-        stackView.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -8).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -8).isActive = true
+        layout(contentView: stackView)
+    }
+    
+    private func layout(contentView view: UIView) {
+        let margin = CGFloat(8)
+        let superView = safeAreaLayoutGuide
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        let constraints = [
+            view.topAnchor.constraint(equalTo: superView.topAnchor, constant: margin),
+            view.leftAnchor.constraint(equalTo: superView.leftAnchor, constant: margin),
+            view.rightAnchor.constraint(equalTo: superView.rightAnchor, constant: -margin),
+            view.bottomAnchor.constraint(equalTo: superView.bottomAnchor, constant: -margin)
+        ]
+        
+        NSLayoutConstraint.activate(constraints)
     }
     
 }
