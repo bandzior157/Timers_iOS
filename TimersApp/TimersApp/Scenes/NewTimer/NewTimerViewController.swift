@@ -48,19 +48,7 @@ class NewTimerViewController: UIViewController {
         setupSaveButton()
         setupCancelButton()
         setupContentViews()
-    }
-    
-    @objc private func textFieldDidChange(_ textField: UITextField) {
-        guard let text = textField.text else { return }
-        
-        switch textField {
-        case nameTextField:
-            presenter?.nameChanged(text)
-        case descriptionTextField:
-            presenter?.descriptionChanged(text)
-        default:
-            return
-        }
+        setupKeyboardDismiss()
     }
     
     private func setupContentViews() {
@@ -94,6 +82,11 @@ class NewTimerViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveButtonDidTapped))
     }
     
+    private func setupKeyboardDismiss() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
     @objc private func cancelButtonDidTapped() {
         presenter?.cancel()
     }
@@ -102,4 +95,20 @@ class NewTimerViewController: UIViewController {
         presenter?.save()
     }
     
+    @objc private func textFieldDidChange(_ textField: UITextField) {
+        guard let text = textField.text else { return }
+        
+        switch textField {
+        case nameTextField:
+            presenter?.nameChanged(text)
+        case descriptionTextField:
+            presenter?.descriptionChanged(text)
+        default:
+            return
+        }
+    }
+    
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
