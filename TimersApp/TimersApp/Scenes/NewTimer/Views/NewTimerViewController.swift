@@ -38,11 +38,12 @@ class NewTimerViewController: UIViewController {
         return textField
     }()
     
-    var presenter: TheNewTimerPresenter?
+    var presenter: NewTimerPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        navigationController?.navigationBar.tintColor = .systemTeal
         
         title = "New timer"
         setupSaveButton()
