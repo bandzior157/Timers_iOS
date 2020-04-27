@@ -55,9 +55,9 @@ class NewTimerViewController: UIViewController {
         
         switch textField {
         case nameTextField:
-            presenter?.timerNameChanged(text)
+            presenter?.nameChanged(text)
         case descriptionTextField:
-            presenter?.timerDescriptionChanged(text)
+            presenter?.descriptionChanged(text)
         default:
             return
         }
@@ -87,11 +87,19 @@ class NewTimerViewController: UIViewController {
     }
     
     private func setupCancelButton() {
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: presenter, action: #selector(presenter?.cancelButtonHandler))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelButtonDidTapped))
     }
     
     private func setupSaveButton() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: nil, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveButtonDidTapped))
+    }
+    
+    @objc private func cancelButtonDidTapped() {
+        presenter?.cancel()
+    }
+    
+    @objc private func saveButtonDidTapped() {
+        presenter?.save()
     }
     
 }

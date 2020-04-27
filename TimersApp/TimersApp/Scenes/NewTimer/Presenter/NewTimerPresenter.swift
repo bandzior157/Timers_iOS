@@ -7,43 +7,40 @@
 //
 
 protocol NewTimerPresenter {
-    func cancelButtonHandler()
-    func timerNameChanged(_ string: String)
-    func timerDescriptionChanged(_ string: String)
+    func cancel()
+    func save()
+    func nameChanged(_ string: String)
+    func descriptionChanged(_ string: String)
 }
 
 class TheNewTimerPresenter: NewTimerPresenter {
     var router: NewTimerRouter?
     
-    @objc func cancelButtonHandler() {
+    private var timer = NewTimer()
+    
+    func cancel() {
         router?.closePresentedViewController()
     }
     
-    func timerNameChanged(_ string: String) {
-        print("timerNameChanged to: \(string)")
+    func save() {
+        print("Trying to save timer with name: \(timer.name) and description: \(timer.description)")
     }
     
-    func timerDescriptionChanged(_ string: String) {
-        print("timerDescriptionChanged to: \(string)")
+    func nameChanged(_ string: String) {
+        timer.name = string
+    }
+    
+    func descriptionChanged(_ string: String) {
+        timer.description = string
     }
 }
 
-
-
-import UIKit
-
-protocol NewTimerRouter {
-    func closePresentedViewController()
-}
-
-class TheNewTimerRouter: NewTimerRouter {
-    weak var rootViewController: UIViewController?
-
-    init(rootViewController: UIViewController) {
-        self.rootViewController = rootViewController
-    }
+struct NewTimer {
+    var name: String
+    var description: String
     
-    func closePresentedViewController() {
-        rootViewController?.dismiss(animated: true)
+    init() {
+        self.name = ""
+        self.description = ""
     }
 }
