@@ -9,10 +9,20 @@
 import UIKit
 
 class NonAnimatedViewController: UIViewController {
-    private(set) var lastPresentedViewController: UIViewController?
+    private var lastPresentedViewController: UIViewController?
     
     override func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
         lastPresentedViewController = viewControllerToPresent
 //        super.present(viewControllerToPresent, animated: false, completion: completion)
+    }
+    
+    var visibleViewController: UIViewController? {
+        switch lastPresentedViewController {
+        case is UINavigationController:
+            let navigationController = lastPresentedViewController as! UINavigationController
+            return navigationController.viewControllers.last
+        default:
+            return lastPresentedViewController
+        }
     }
 }

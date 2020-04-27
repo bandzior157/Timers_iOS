@@ -17,10 +17,10 @@ class TimersListRouterTests: XCTestCase {
 
         let sut = makeSUT(viewController, factory)
         
-        XCTAssertNil(viewController.lastPresentedViewController)
+        XCTAssertNil(viewController.visibleViewController)
 
         sut.routeToNewTimer()
-        XCTAssertEqual(viewController.lastPresentedViewController, factory.fakeNewTimerViewController)
+        XCTAssertEqual(viewController.visibleViewController, factory.fakeNewTimerViewController)
     }
     
     
