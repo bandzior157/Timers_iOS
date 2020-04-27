@@ -8,6 +8,8 @@
 
 protocol NewTimerPresenter {
     func cancelButtonHandler()
+    func timerNameChanged(_ string: String)
+    func timerDescriptionChanged(_ string: String)
 }
 
 class TheNewTimerPresenter: NewTimerPresenter {
@@ -15,6 +17,14 @@ class TheNewTimerPresenter: NewTimerPresenter {
     
     @objc func cancelButtonHandler() {
         router?.closePresentedViewController()
+    }
+    
+    func timerNameChanged(_ string: String) {
+        print("timerNameChanged to: \(string)")
+    }
+    
+    func timerDescriptionChanged(_ string: String) {
+        print("timerDescriptionChanged to: \(string)")
     }
 }
 

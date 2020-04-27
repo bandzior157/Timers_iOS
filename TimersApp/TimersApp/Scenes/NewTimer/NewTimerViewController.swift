@@ -26,6 +26,7 @@ class NewTimerViewController: UIViewController {
         var textField = UITextField()
         textField.placeholder = "Name"
         textField.borderStyle = .roundedRect
+        textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         return textField
     }()
     
@@ -33,6 +34,7 @@ class NewTimerViewController: UIViewController {
         var textField = UITextField()
         textField.placeholder = "Description"
         textField.borderStyle = .roundedRect
+        textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         return textField
     }()
     
@@ -46,6 +48,19 @@ class NewTimerViewController: UIViewController {
         setupSaveButton()
         setupCancelButton()
         setupContentViews()
+    }
+    
+    @objc private func textFieldDidChange(_ textField: UITextField) {
+        guard let text = textField.text else { return }
+        
+        switch textField {
+        case nameTextField:
+            presenter?.timerNameChanged(text)
+        case descriptionTextField:
+            presenter?.timerDescriptionChanged(text)
+        default:
+            return
+        }
     }
     
     private func setupContentViews() {
