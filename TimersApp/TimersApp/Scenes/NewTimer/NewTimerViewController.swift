@@ -36,6 +36,8 @@ class NewTimerViewController: UIViewController {
         return textField
     }()
     
+    var presenter: TheNewTimerPresenter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -70,11 +72,11 @@ class NewTimerViewController: UIViewController {
     }
     
     private func setupCancelButton() {
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: nil, action: nil)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: presenter, action: #selector(presenter?.cancelButtonHandler))
     }
     
     private func setupSaveButton() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: nil, action: nil)
     }
-        
+    
 }

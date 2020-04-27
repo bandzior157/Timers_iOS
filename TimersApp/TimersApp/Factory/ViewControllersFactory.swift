@@ -14,6 +14,8 @@ protocol ViewControllersFactory {
 
 class TheViewControllersFactory: ViewControllersFactory {
     func newTimerViewController() -> UIViewController {
-        NewTimerViewController()
+        let vc = NewTimerViewController()
+        NewTimerConfigurator.configure(viewController: vc)
+        return vc
     }
 }
