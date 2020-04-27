@@ -22,7 +22,8 @@ class TheTimersListRouter: TimersListRouter {
     }
     
     func routeToNewTimer() {
-        present(factory.newTimerViewController())
+        let viewController = UINavigationController(rootViewController: factory.newTimerViewController())
+        present(viewController)
     }
     
     private func present(_ viewControllerToPresent: UIViewController) {
