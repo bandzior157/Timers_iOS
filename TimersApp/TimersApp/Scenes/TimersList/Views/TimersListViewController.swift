@@ -11,8 +11,7 @@ import UIKit
 class TimersListViewController: UITableViewController {
         
     var presenter: TimersListPresenter?
-    var addButton: UIBarButtonItem?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -22,8 +21,7 @@ class TimersListViewController: UITableViewController {
     }
     
     private func setupAddButton() {
-        addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(newTimerButtonTapped))
-        navigationItem.rightBarButtonItem = addButton
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(newTimerButtonTapped))
     }
     
     @objc private func newTimerButtonTapped() {
