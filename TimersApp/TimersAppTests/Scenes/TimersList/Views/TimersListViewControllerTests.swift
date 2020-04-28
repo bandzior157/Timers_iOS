@@ -22,8 +22,10 @@ class TimersListViewControllerTests: XCTestCase {
         sut.presenter = presenter
         
         let button = sut.navigationItem.rightBarButtonItem
+        
+        XCTAssertEqual(presenter.newTimerButtonClickedCounter, 0)
+        
         button?.tap()
-
         XCTAssertEqual(presenter.newTimerButtonClickedCounter, 1)
     }
     
