@@ -8,6 +8,8 @@ iOS App to manage your timers.
 
 ✅ Unit tests
 
+✅ UI programmatically
+
 ✅ Support dark mode
 
 ✅ Support dynamic type
