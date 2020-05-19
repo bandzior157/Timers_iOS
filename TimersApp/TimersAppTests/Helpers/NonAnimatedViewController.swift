@@ -13,9 +13,9 @@ class NonAnimatedViewController: UIViewController {
     
     override func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
         lastPresentedViewController = viewControllerToPresent
-//        super.present(viewControllerToPresent, animated: false, completion: completion)
+        super.present(viewControllerToPresent, animated: false, completion: completion)
     }
-    
+        
     var visibleViewController: UIViewController? {
         switch lastPresentedViewController {
         case is UINavigationController:

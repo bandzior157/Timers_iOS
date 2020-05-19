@@ -9,4 +9,9 @@
 struct TimerCellViewModel {
     var nameText: String
     var descriptionText: String
+    
+    init(timer: Timer) {
+        self.nameText = timer.title
+        self.descriptionText = timer.body
+    }
 }

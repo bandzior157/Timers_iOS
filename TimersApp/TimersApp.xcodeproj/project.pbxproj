@@ -7,12 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A00135C2473E91800515701 /* StaticTimerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A00135B2473E91800515701 /* StaticTimerServiceTests.swift */; };
+		5A00135F24743EF500515701 /* Array+ElementExists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A00135D24743E2900515701 /* Array+ElementExists.swift */; };
+		5A00136124743FD100515701 /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A00136024743FD100515701 /* TimerService.swift */; };
+		5A0013632474423A00515701 /* TimerPresentationModel+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0013622474423A00515701 /* TimerPresentationModel+Equatable.swift */; };
+		5A001365247442EF00515701 /* MockNewTimerInteractingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A001364247442EF00515701 /* MockNewTimerInteractingDelegate.swift */; };
+		5A0013682474445C00515701 /* TimerPresentationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0013662474436B00515701 /* TimerPresentationFactory.swift */; };
+		5A00136A2474449B00515701 /* TimerResult+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0013692474449B00515701 /* TimerResult+Equatable.swift */; };
+		5A00136E247444F700515701 /* Timer+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A00136D247444F700515701 /* Timer+CustomStringConvertible.swift */; };
+		5A4BC3A22472B9B500D35E45 /* MockAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4BC3A12472B9B500D35E45 /* MockAlertPresenter.swift */; };
+		5A5A56FF2464759800469D9C /* DummyTimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A56FE2464759800469D9C /* DummyTimerService.swift */; };
+		5A5A57012464789500469D9C /* NewTimerConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A57002464789500469D9C /* NewTimerConfiguratorTests.swift */; };
+		5A65D5B1246AC6CC00B0667B /* DynamicTypeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65D5B0246AC6CC00B0667B /* DynamicTypeLabel.swift */; };
+		5A65D5B3246AC70700B0667B /* DynamicTypeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65D5B2246AC70700B0667B /* DynamicTypeTextField.swift */; };
+		5A65D5B5246AFCEA00B0667B /* NewTimerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65D5B4246AFCEA00B0667B /* NewTimerPresenterTests.swift */; };
+		5A65D5B7246B027900B0667B /* MockNewTimerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65D5B6246B027900B0667B /* MockNewTimerRouter.swift */; };
+		5A65D5B9246B029100B0667B /* MockNewTimerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65D5B8246B029100B0667B /* MockNewTimerInteractor.swift */; };
+		5A65D5BB246B029800B0667B /* MockNewTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65D5BA246B029800B0667B /* MockNewTimerView.swift */; };
+		5A6CB099246310CB00AE5C98 /* TimersListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6CB098246310CA00AE5C98 /* TimersListInteractorTests.swift */; };
+		5A6CB09D2463174100AE5C98 /* TimerServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6CB09C2463174100AE5C98 /* TimerServicing.swift */; };
+		5A6CB09F2463175500AE5C98 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6CB09E2463175500AE5C98 /* Result.swift */; };
+		5A6CB0A12463177100AE5C98 /* TimerServicingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6CB0A02463177100AE5C98 /* TimerServicingError.swift */; };
+		5A6CB0B62463545900AE5C98 /* Array+GetElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6CB0B52463545900AE5C98 /* Array+GetElementTests.swift */; };
+		5A718F12246D4E1900A12EC1 /* FakeTimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A718F11246D4E1900A12EC1 /* FakeTimerService.swift */; };
+		5A718F15246D4E4600A12EC1 /* MockTimerResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A718F14246D4E4600A12EC1 /* MockTimerResult.swift */; };
 		5A87A69524571F9A009D4E13 /* NewTimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A87A69424571F9A009D4E13 /* NewTimerPresenter.swift */; };
 		5A87A69724572D8A009D4E13 /* NewTimerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A87A69624572D8A009D4E13 /* NewTimerConfigurator.swift */; };
 		5A87A69A24575072009D4E13 /* NewTimerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A87A69924575072009D4E13 /* NewTimerRouter.swift */; };
 		5A87A69D24577272009D4E13 /* NewTimerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A87A69C24577272009D4E13 /* NewTimerViewControllerTests.swift */; };
 		5A87A6A0245776D3009D4E13 /* UIBarButtonItem+SystemItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A87A69F245776D3009D4E13 /* UIBarButtonItem+SystemItem.swift */; };
 		5A87A6A3245778B6009D4E13 /* MockNewTimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A87A6A2245778B6009D4E13 /* MockNewTimerPresenter.swift */; };
+		5A87A6A72458501B009D4E13 /* Array+GetElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A87A6A62458501B009D4E13 /* Array+GetElement.swift */; };
+		5A87A6A92458C045009D4E13 /* TimersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A87A6A82458C045009D4E13 /* TimersListInteractor.swift */; };
+		5A87A6AF2458C0AE009D4E13 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A87A6AE2458C0AE009D4E13 /* Timer.swift */; };
+		5A87A6B12458C272009D4E13 /* TimersListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A87A6B02458C272009D4E13 /* TimersListContract.swift */; };
+		5A87A6B32458CF65009D4E13 /* NewTimerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A87A6B22458CF65009D4E13 /* NewTimerContract.swift */; };
+		5A87A6B82458D9A7009D4E13 /* StaticTimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A87A6B72458D9A7009D4E13 /* StaticTimerService.swift */; };
+		5A9FB7F5245F576A00FCCD8B /* NewTimerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9FB7F4245F576A00FCCD8B /* NewTimerInteractor.swift */; };
+		5AA786D32464332A00576003 /* ViperConfiguratingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA786D22464332A00576003 /* ViperConfiguratingModel.swift */; };
+		5AA786D52464344F00576003 /* SimplyInitializing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA786D42464344F00576003 /* SimplyInitializing.swift */; };
+		5AA786D824643CF700576003 /* ViperConfiguratingModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA786D724643CF700576003 /* ViperConfiguratingModelTests.swift */; };
+		5AA786DB24643FF900576003 /* DummySimplyInitializing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA786DA24643FF900576003 /* DummySimplyInitializing.swift */; };
+		5AA786DD2464406D00576003 /* TimersListConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA786DC2464406D00576003 /* TimersListConfiguratorTests.swift */; };
+		5AB78F3B246C0F430018A3EF /* UIFont_TextStyle+TestableRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB78F3A246C0F430018A3EF /* UIFont_TextStyle+TestableRandom.swift */; };
+		5AB78F3D246C0FA50018A3EF /* NewTimerInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB78F3C246C0FA50018A3EF /* NewTimerInteractorTests.swift */; };
+		5ABAC917246358A5001E7E3F /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABAC916246358A5001E7E3F /* TimerTests.swift */; };
+		5ABAC919246359A6001E7E3F /* NewTimerRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABAC918246359A6001E7E3F /* NewTimerRouterTests.swift */; };
+		5ABAC91B24635B91001E7E3F /* NonAnimatedDismissViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABAC91A24635B91001E7E3F /* NonAnimatedDismissViewController.swift */; };
+		5ACCB2D524600562002C64D2 /* FakeTimersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCB2D424600562002C64D2 /* FakeTimersListInteractor.swift */; };
+		5ACCB2D724600576002C64D2 /* MockTimersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCB2D624600576002C64D2 /* MockTimersListInteractor.swift */; };
+		5ACCB2D92460058B002C64D2 /* MockTimersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCB2D82460058B002C64D2 /* MockTimersListViewController.swift */; };
+		5ADB207D2460226A0045675C /* Margins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADB207C2460226A0045675C /* Margins.swift */; };
+		5ADB20802460A82F0045675C /* NewTimerViewControllerTextFieldsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADB207F2460A82F0045675C /* NewTimerViewControllerTextFieldsController.swift */; };
+		5ADB20832460A9190045675C /* NewTimerViewControllerTextFieldsControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADB20822460A9190045675C /* NewTimerViewControllerTextFieldsControllerTests.swift */; };
+		5ADF3B422469B5C600008729 /* NewTimerValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF3B412469B5C600008729 /* NewTimerValidationError.swift */; };
+		5ADF3B442469B93E00008729 /* SimpleAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF3B432469B93E00008729 /* SimpleAlertPresenter.swift */; };
+		5ADF3B462469CF2200008729 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF3B452469CF2200008729 /* UIAlertController.swift */; };
+		5ADF3B482469CF4E00008729 /* SimpleAlertShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF3B472469CF4E00008729 /* SimpleAlertShowing.swift */; };
+		5AE444A0246856BE00736A83 /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4449F246856BE00736A83 /* MockError.swift */; };
+		5AE444A2246856FA00736A83 /* MockTimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE444A1246856FA00736A83 /* MockTimerService.swift */; };
+		5AE444A42468574A00736A83 /* MockTimersListInteractingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE444A32468574A00736A83 /* MockTimersListInteractingDelegate.swift */; };
+		5AE444A62468578C00736A83 /* TimerPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE444A52468578C00736A83 /* TimerPresentationModel.swift */; };
+		5AE444AB246860B900736A83 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE444AA246860B900736A83 /* CustomDatePicker.swift */; };
 		5AE5F4592456168A00FD678D /* NewTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5F4582456168A00FD678D /* NewTimerViewController.swift */; };
 		5AE5F45B245628C400FD678D /* TimersListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5F45A245628C400FD678D /* TimersListConfigurator.swift */; };
 		5AE5F45E245628F500FD678D /* TimersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5F45D245628F500FD678D /* TimersListPresenter.swift */; };
@@ -24,9 +80,13 @@
 		5AE5F472245632FE00FD678D /* TimersListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5F471245632FE00FD678D /* TimersListRouterTests.swift */; };
 		5AE5F4742456334C00FD678D /* MockTimersListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5F4732456334C00FD678D /* MockTimersListRouter.swift */; };
 		5AE5F47624563C2500FD678D /* NonAnimatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5F47524563C2500FD678D /* NonAnimatedViewController.swift */; };
-		5AE5F47924563C6A00FD678D /* ViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5F47824563C6A00FD678D /* ViewControllersFactory.swift */; };
-		5AE5F47C24563C8B00FD678D /* FakeViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5F47B24563C8B00FD678D /* FakeViewControllersFactory.swift */; };
-		5AE5F47E24563CDE00FD678D /* TheViewControllersFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5F47D24563CDE00FD678D /* TheViewControllersFactoryTests.swift */; };
+		5AE81671246BF87F004E7185 /* ErrorShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE81670246BF87F004E7185 /* ErrorShowing.swift */; };
+		5AE81674246BF994004E7185 /* DynamicTypeLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE81673246BF994004E7185 /* DynamicTypeLabelTests.swift */; };
+		5AE81677246BFC1C004E7185 /* CGRect+TestableRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE81676246BFC1C004E7185 /* CGRect+TestableRandom.swift */; };
+		5AE81679246BFC29004E7185 /* Int+TestableRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE81678246BFC29004E7185 /* Int+TestableRandom.swift */; };
+		5AE8167B246BFCB6004E7185 /* String+TestableRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE8167A246BFCB6004E7185 /* String+TestableRandom.swift */; };
+		5AE8167D246BFF03004E7185 /* TestableRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE8167C246BFF03004E7185 /* TestableRandom.swift */; };
+		5AE8167F246C0BCB004E7185 /* DynamicTypeTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE8167E246C0BCB004E7185 /* DynamicTypeTextFieldTests.swift */; };
 		5AFF3D462451BD7D00270403 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF3D452451BD7D00270403 /* AppDelegate.swift */; };
 		5AFF3D482451BD7D00270403 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF3D472451BD7D00270403 /* SceneDelegate.swift */; };
 		5AFF3D502451BD7D00270403 /* TimersApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF3D4E2451BD7D00270403 /* TimersApp.xcdatamodeld */; };
@@ -50,12 +110,68 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A00135B2473E91800515701 /* StaticTimerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticTimerServiceTests.swift; sourceTree = "<group>"; };
+		5A00135D24743E2900515701 /* Array+ElementExists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ElementExists.swift"; sourceTree = "<group>"; };
+		5A00136024743FD100515701 /* TimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerService.swift; sourceTree = "<group>"; };
+		5A0013622474423A00515701 /* TimerPresentationModel+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimerPresentationModel+Equatable.swift"; sourceTree = "<group>"; };
+		5A001364247442EF00515701 /* MockNewTimerInteractingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewTimerInteractingDelegate.swift; sourceTree = "<group>"; };
+		5A0013662474436B00515701 /* TimerPresentationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPresentationFactory.swift; sourceTree = "<group>"; };
+		5A0013692474449B00515701 /* TimerResult+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimerResult+Equatable.swift"; sourceTree = "<group>"; };
+		5A00136D247444F700515701 /* Timer+CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+CustomStringConvertible.swift"; sourceTree = "<group>"; };
+		5A4BC3A12472B9B500D35E45 /* MockAlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlertPresenter.swift; sourceTree = "<group>"; };
+		5A5A56FE2464759800469D9C /* DummyTimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTimerService.swift; sourceTree = "<group>"; };
+		5A5A57002464789500469D9C /* NewTimerConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerConfiguratorTests.swift; sourceTree = "<group>"; };
+		5A65D5B0246AC6CC00B0667B /* DynamicTypeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeLabel.swift; sourceTree = "<group>"; };
+		5A65D5B2246AC70700B0667B /* DynamicTypeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeTextField.swift; sourceTree = "<group>"; };
+		5A65D5B4246AFCEA00B0667B /* NewTimerPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerPresenterTests.swift; sourceTree = "<group>"; };
+		5A65D5B6246B027900B0667B /* MockNewTimerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewTimerRouter.swift; sourceTree = "<group>"; };
+		5A65D5B8246B029100B0667B /* MockNewTimerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewTimerInteractor.swift; sourceTree = "<group>"; };
+		5A65D5BA246B029800B0667B /* MockNewTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewTimerView.swift; sourceTree = "<group>"; };
+		5A6CB098246310CA00AE5C98 /* TimersListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersListInteractorTests.swift; sourceTree = "<group>"; };
+		5A6CB09C2463174100AE5C98 /* TimerServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerServicing.swift; sourceTree = "<group>"; };
+		5A6CB09E2463175500AE5C98 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		5A6CB0A02463177100AE5C98 /* TimerServicingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerServicingError.swift; sourceTree = "<group>"; };
+		5A6CB0B52463545900AE5C98 /* Array+GetElementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+GetElementTests.swift"; sourceTree = "<group>"; };
+		5A718F11246D4E1900A12EC1 /* FakeTimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTimerService.swift; sourceTree = "<group>"; };
+		5A718F14246D4E4600A12EC1 /* MockTimerResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimerResult.swift; sourceTree = "<group>"; };
 		5A87A69424571F9A009D4E13 /* NewTimerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerPresenter.swift; sourceTree = "<group>"; };
 		5A87A69624572D8A009D4E13 /* NewTimerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerConfigurator.swift; sourceTree = "<group>"; };
 		5A87A69924575072009D4E13 /* NewTimerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerRouter.swift; sourceTree = "<group>"; };
 		5A87A69C24577272009D4E13 /* NewTimerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerViewControllerTests.swift; sourceTree = "<group>"; };
 		5A87A69F245776D3009D4E13 /* UIBarButtonItem+SystemItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+SystemItem.swift"; sourceTree = "<group>"; };
 		5A87A6A2245778B6009D4E13 /* MockNewTimerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewTimerPresenter.swift; sourceTree = "<group>"; };
+		5A87A6A62458501B009D4E13 /* Array+GetElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+GetElement.swift"; sourceTree = "<group>"; };
+		5A87A6A82458C045009D4E13 /* TimersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersListInteractor.swift; sourceTree = "<group>"; };
+		5A87A6AE2458C0AE009D4E13 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		5A87A6B02458C272009D4E13 /* TimersListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersListContract.swift; sourceTree = "<group>"; };
+		5A87A6B22458CF65009D4E13 /* NewTimerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerContract.swift; sourceTree = "<group>"; };
+		5A87A6B72458D9A7009D4E13 /* StaticTimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticTimerService.swift; sourceTree = "<group>"; };
+		5A9FB7F4245F576A00FCCD8B /* NewTimerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerInteractor.swift; sourceTree = "<group>"; };
+		5AA786D22464332A00576003 /* ViperConfiguratingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperConfiguratingModel.swift; sourceTree = "<group>"; };
+		5AA786D42464344F00576003 /* SimplyInitializing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplyInitializing.swift; sourceTree = "<group>"; };
+		5AA786D724643CF700576003 /* ViperConfiguratingModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperConfiguratingModelTests.swift; sourceTree = "<group>"; };
+		5AA786DA24643FF900576003 /* DummySimplyInitializing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummySimplyInitializing.swift; sourceTree = "<group>"; };
+		5AA786DC2464406D00576003 /* TimersListConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersListConfiguratorTests.swift; sourceTree = "<group>"; };
+		5AB78F3A246C0F430018A3EF /* UIFont_TextStyle+TestableRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont_TextStyle+TestableRandom.swift"; sourceTree = "<group>"; };
+		5AB78F3C246C0FA50018A3EF /* NewTimerInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerInteractorTests.swift; sourceTree = "<group>"; };
+		5ABAC916246358A5001E7E3F /* TimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTests.swift; sourceTree = "<group>"; };
+		5ABAC918246359A6001E7E3F /* NewTimerRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerRouterTests.swift; sourceTree = "<group>"; };
+		5ABAC91A24635B91001E7E3F /* NonAnimatedDismissViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonAnimatedDismissViewController.swift; sourceTree = "<group>"; };
+		5ACCB2D424600562002C64D2 /* FakeTimersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTimersListInteractor.swift; sourceTree = "<group>"; };
+		5ACCB2D624600576002C64D2 /* MockTimersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimersListInteractor.swift; sourceTree = "<group>"; };
+		5ACCB2D82460058B002C64D2 /* MockTimersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimersListViewController.swift; sourceTree = "<group>"; };
+		5ADB207C2460226A0045675C /* Margins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Margins.swift; sourceTree = "<group>"; };
+		5ADB207F2460A82F0045675C /* NewTimerViewControllerTextFieldsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerViewControllerTextFieldsController.swift; sourceTree = "<group>"; };
+		5ADB20822460A9190045675C /* NewTimerViewControllerTextFieldsControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerViewControllerTextFieldsControllerTests.swift; sourceTree = "<group>"; };
+		5ADF3B412469B5C600008729 /* NewTimerValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerValidationError.swift; sourceTree = "<group>"; };
+		5ADF3B432469B93E00008729 /* SimpleAlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlertPresenter.swift; sourceTree = "<group>"; };
+		5ADF3B452469CF2200008729 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		5ADF3B472469CF4E00008729 /* SimpleAlertShowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlertShowing.swift; sourceTree = "<group>"; };
+		5AE4449F246856BE00736A83 /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
+		5AE444A1246856FA00736A83 /* MockTimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimerService.swift; sourceTree = "<group>"; };
+		5AE444A32468574A00736A83 /* MockTimersListInteractingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimersListInteractingDelegate.swift; sourceTree = "<group>"; };
+		5AE444A52468578C00736A83 /* TimerPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPresentationModel.swift; sourceTree = "<group>"; };
+		5AE444AA246860B900736A83 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		5AE5F4582456168A00FD678D /* NewTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerViewController.swift; sourceTree = "<group>"; };
 		5AE5F45A245628C400FD678D /* TimersListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersListConfigurator.swift; sourceTree = "<group>"; };
 		5AE5F45D245628F500FD678D /* TimersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersListPresenter.swift; sourceTree = "<group>"; };
@@ -67,9 +183,13 @@
 		5AE5F471245632FE00FD678D /* TimersListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersListRouterTests.swift; sourceTree = "<group>"; };
 		5AE5F4732456334C00FD678D /* MockTimersListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimersListRouter.swift; sourceTree = "<group>"; };
 		5AE5F47524563C2500FD678D /* NonAnimatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonAnimatedViewController.swift; sourceTree = "<group>"; };
-		5AE5F47824563C6A00FD678D /* ViewControllersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersFactory.swift; sourceTree = "<group>"; };
-		5AE5F47B24563C8B00FD678D /* FakeViewControllersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeViewControllersFactory.swift; sourceTree = "<group>"; };
-		5AE5F47D24563CDE00FD678D /* TheViewControllersFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheViewControllersFactoryTests.swift; sourceTree = "<group>"; };
+		5AE81670246BF87F004E7185 /* ErrorShowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorShowing.swift; sourceTree = "<group>"; };
+		5AE81673246BF994004E7185 /* DynamicTypeLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeLabelTests.swift; sourceTree = "<group>"; };
+		5AE81676246BFC1C004E7185 /* CGRect+TestableRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+TestableRandom.swift"; sourceTree = "<group>"; };
+		5AE81678246BFC29004E7185 /* Int+TestableRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+TestableRandom.swift"; sourceTree = "<group>"; };
+		5AE8167A246BFCB6004E7185 /* String+TestableRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+TestableRandom.swift"; sourceTree = "<group>"; };
+		5AE8167C246BFF03004E7185 /* TestableRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableRandom.swift; sourceTree = "<group>"; };
+		5AE8167E246C0BCB004E7185 /* DynamicTypeTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeTextFieldTests.swift; sourceTree = "<group>"; };
 		5AFF3D422451BD7D00270403 /* TimersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFF3D452451BD7D00270403 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AFF3D472451BD7D00270403 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,44 +224,142 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5A39C14B24561116004889CD /* Views */ = {
+		5A00136B247444D400515701 /* Equatable */ = {
 			isa = PBXGroup;
 			children = (
-				5A39C14C2456112C004889CD /* Cells */,
-				5AFF3D6C2451EE4B00270403 /* TimersListViewController.swift */,
+				5A0013692474449B00515701 /* TimerResult+Equatable.swift */,
+				5A0013622474423A00515701 /* TimerPresentationModel+Equatable.swift */,
+				5A00136D247444F700515701 /* Timer+CustomStringConvertible.swift */,
 			);
-			path = Views;
+			path = Equatable;
 			sourceTree = "<group>";
 		};
-		5A39C14C2456112C004889CD /* Cells */ = {
+		5A00136C247444E300515701 /* CustomStringConvertible */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomStringConvertible;
+			sourceTree = "<group>";
+		};
+		5A39C14B24561116004889CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				5AFF3D7424522B6300270403 /* TimerTableViewCell.swift */,
 			);
-			path = Cells;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		5A87A69324571F7E009D4E13 /* Presenter */ = {
+		5A4BC3A02472B99500D35E45 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				5A87A69424571F9A009D4E13 /* NewTimerPresenter.swift */,
+				5A4BC3A12472B9B500D35E45 /* MockAlertPresenter.swift */,
 			);
-			path = Presenter;
+			name = Alert;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
-		5A87A6982457505F009D4E13 /* Router */ = {
+		5A5A56FD2464753A00469D9C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				5A87A69924575072009D4E13 /* NewTimerRouter.swift */,
+				5A5A56FE2464759800469D9C /* DummyTimerService.swift */,
+				5A00135B2473E91800515701 /* StaticTimerServiceTests.swift */,
+				5AE444A1246856FA00736A83 /* MockTimerService.swift */,
+				5A718F11246D4E1900A12EC1 /* FakeTimerService.swift */,
+				5A718F13246D4E3A00A12EC1 /* TimerResult */,
 			);
-			path = Router;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5A5A570224647C0800469D9C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5A65D5BA246B029800B0667B /* MockNewTimerView.swift */,
+				5A65D5B8246B029100B0667B /* MockNewTimerInteractor.swift */,
+				5A001364247442EF00515701 /* MockNewTimerInteractingDelegate.swift */,
+				5A87A6A2245778B6009D4E13 /* MockNewTimerPresenter.swift */,
+				5A65D5B6246B027900B0667B /* MockNewTimerRouter.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5A5A570324647C1600469D9C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5ACCB2D82460058B002C64D2 /* MockTimersListViewController.swift */,
+				5ACCB2DA246008A0002C64D2 /* TimersListInteracting */,
+				5AE5F4662456305900FD678D /* MockTimersListPresenter.swift */,
+				5AE5F4732456334C00FD678D /* MockTimersListRouter.swift */,
+				5AE444A32468574A00736A83 /* MockTimersListInteractingDelegate.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5A65D5AF246AC5B000B0667B /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				5AE444AA246860B900736A83 /* CustomDatePicker.swift */,
+				5A65D5B0246AC6CC00B0667B /* DynamicTypeLabel.swift */,
+				5A65D5B2246AC70700B0667B /* DynamicTypeTextField.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		5A6CB09A2463171900AE5C98 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5A87A6AE2458C0AE009D4E13 /* Timer.swift */,
+				5AE444A52468578C00736A83 /* TimerPresentationModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5A6CB09B2463173300AE5C98 /* TimerServicing */ = {
+			isa = PBXGroup;
+			children = (
+				5A6CB09C2463174100AE5C98 /* TimerServicing.swift */,
+				5A6CB0A02463177100AE5C98 /* TimerServicingError.swift */,
+				5A00136024743FD100515701 /* TimerService.swift */,
+				5A87A6B72458D9A7009D4E13 /* StaticTimerService.swift */,
+			);
+			path = TimerServicing;
+			sourceTree = "<group>";
+		};
+		5A6CB0A224631AFC00AE5C98 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				5ADF3B472469CF4E00008729 /* SimpleAlertShowing.swift */,
+				5ADF3B432469B93E00008729 /* SimpleAlertPresenter.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		5A6CB0B42463543000AE5C98 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A6CB0B52463545900AE5C98 /* Array+GetElementTests.swift */,
+				5AE81675246BFC06004E7185 /* TestableRandom */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5A718F13246D4E3A00A12EC1 /* TimerResult */ = {
+			isa = PBXGroup;
+			children = (
+				5A718F14246D4E4600A12EC1 /* MockTimerResult.swift */,
+			);
+			path = TimerResult;
 			sourceTree = "<group>";
 		};
 		5A87A69B24577258009D4E13 /* NewTimer */ = {
 			isa = PBXGroup;
 			children = (
+				5A5A57002464789500469D9C /* NewTimerConfiguratorTests.swift */,
 				5A87A69C24577272009D4E13 /* NewTimerViewControllerTests.swift */,
-				5A87A6A1245778AC009D4E13 /* Presenter */,
+				5A65D5B4246AFCEA00B0667B /* NewTimerPresenterTests.swift */,
+				5AB78F3C246C0FA50018A3EF /* NewTimerInteractorTests.swift */,
+				5ABAC918246359A6001E7E3F /* NewTimerRouterTests.swift */,
+				5ADB20812460A8CA0045675C /* View */,
+				5A5A570224647C0800469D9C /* Mocks */,
 			);
 			path = NewTimer;
 			sourceTree = "<group>";
@@ -149,52 +367,121 @@
 		5A87A69E245776C2009D4E13 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5A00136C247444E300515701 /* CustomStringConvertible */,
+				5A00136B247444D400515701 /* Equatable */,
 				5A87A69F245776D3009D4E13 /* UIBarButtonItem+SystemItem.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		5A87A6A1245778AC009D4E13 /* Presenter */ = {
+		5A87A6A524584FFD009D4E13 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5A87A6A2245778B6009D4E13 /* MockNewTimerPresenter.swift */,
+				5A87A6A62458501B009D4E13 /* Array+GetElement.swift */,
+				5A00135D24743E2900515701 /* Array+ElementExists.swift */,
+				5ADF3B452469CF2200008729 /* UIAlertController.swift */,
 			);
-			path = Presenter;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		5A87A6A424577B45009D4E13 /* Views */ = {
+		5A87A6B92458D9BB009D4E13 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				5AE5F4582456168A00FD678D /* NewTimerViewController.swift */,
+				5A6CB09E2463175500AE5C98 /* Result.swift */,
+				5A6CB09B2463173300AE5C98 /* TimerServicing */,
 			);
-			path = Views;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5AA786D1246432F000576003 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				5AA786D42464344F00576003 /* SimplyInitializing.swift */,
+				5AA786D22464332A00576003 /* ViperConfiguratingModel.swift */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		5AA786D624643CCA00576003 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				5AA786D724643CF700576003 /* ViperConfiguratingModelTests.swift */,
+				5AA786D924643FEB00576003 /* Mocks */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		5AA786D924643FEB00576003 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5AA786DA24643FF900576003 /* DummySimplyInitializing.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5ABAC9152463587C001E7E3F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5ABAC916246358A5001E7E3F /* TimerTests.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5ACCB2DA246008A0002C64D2 /* TimersListInteracting */ = {
+			isa = PBXGroup;
+			children = (
+				5ACCB2D624600576002C64D2 /* MockTimersListInteractor.swift */,
+				5ACCB2D424600562002C64D2 /* FakeTimersListInteractor.swift */,
+			);
+			path = TimersListInteracting;
+			sourceTree = "<group>";
+		};
+		5ADB207B246022500045675C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5A87A6A524584FFD009D4E13 /* Extensions */,
+				5ADB207C2460226A0045675C /* Margins.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5ADB207E2460A8170045675C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5ADB207F2460A82F0045675C /* NewTimerViewControllerTextFieldsController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5ADB20812460A8CA0045675C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5ADB20822460A9190045675C /* NewTimerViewControllerTextFieldsControllerTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5ADF3B402469B5AA00008729 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				5ADF3B412469B5C600008729 /* NewTimerValidationError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		5AE5F4572456162F00FD678D /* NewTimer */ = {
 			isa = PBXGroup;
 			children = (
-				5A87A6A424577B45009D4E13 /* Views */,
-				5A87A69324571F7E009D4E13 /* Presenter */,
-				5A87A6982457505F009D4E13 /* Router */,
+				5A87A6B22458CF65009D4E13 /* NewTimerContract.swift */,
 				5A87A69624572D8A009D4E13 /* NewTimerConfigurator.swift */,
+				5AE5F4582456168A00FD678D /* NewTimerViewController.swift */,
+				5A9FB7F4245F576A00FCCD8B /* NewTimerInteractor.swift */,
+				5A87A69424571F9A009D4E13 /* NewTimerPresenter.swift */,
+				5A87A69924575072009D4E13 /* NewTimerRouter.swift */,
+				5ADF3B402469B5AA00008729 /* Error */,
+				5ADB207E2460A8170045675C /* View */,
 			);
 			path = NewTimer;
-			sourceTree = "<group>";
-		};
-		5AE5F45C245628EC00FD678D /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				5AE5F45D245628F500FD678D /* TimersListPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		5AE5F45F24562A0F00FD678D /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				5AE5F46024562A1F00FD678D /* TimersListRouter.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		5AE5F46224562A5100FD678D /* ViewModels */ = {
@@ -208,27 +495,9 @@
 		5AE5F4632456302C00FD678D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5AE5F4642456303700FD678D /* Cells */,
-				5AFF3D702451F5E400270403 /* TimersListViewControllerTests.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		5AE5F4642456303700FD678D /* Cells */ = {
-			isa = PBXGroup;
-			children = (
 				5AFF3D7224522A9500270403 /* TimerTableViewCellTests.swift */,
 			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		5AE5F4652456304600FD678D /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				5AE5F46E2456319100FD678D /* TimersListPresenterTests.swift */,
-				5AE5F4662456305900FD678D /* MockTimersListPresenter.swift */,
-			);
-			path = Presenter;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5AE5F4682456308500FD678D /* Helpers */ = {
@@ -237,6 +506,9 @@
 				5A87A69E245776C2009D4E13 /* Extensions */,
 				5AE5F4692456308B00FD678D /* Tapable */,
 				5AE5F47524563C2500FD678D /* NonAnimatedViewController.swift */,
+				5ABAC91A24635B91001E7E3F /* NonAnimatedDismissViewController.swift */,
+				5AE4449F246856BE00736A83 /* MockError.swift */,
+				5A0013662474436B00515701 /* TimerPresentationFactory.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -250,30 +522,25 @@
 			path = Tapable;
 			sourceTree = "<group>";
 		};
-		5AE5F470245632E900FD678D /* Router */ = {
+		5AE81672246BF977004E7185 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
-				5AE5F471245632FE00FD678D /* TimersListRouterTests.swift */,
-				5AE5F4732456334C00FD678D /* MockTimersListRouter.swift */,
+				5AE81673246BF994004E7185 /* DynamicTypeLabelTests.swift */,
+				5AE8167E246C0BCB004E7185 /* DynamicTypeTextFieldTests.swift */,
 			);
-			path = Router;
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
-		5AE5F47724563C5E00FD678D /* Factory */ = {
+		5AE81675246BFC06004E7185 /* TestableRandom */ = {
 			isa = PBXGroup;
 			children = (
-				5AE5F47824563C6A00FD678D /* ViewControllersFactory.swift */,
+				5AE8167C246BFF03004E7185 /* TestableRandom.swift */,
+				5AE81676246BFC1C004E7185 /* CGRect+TestableRandom.swift */,
+				5AB78F3A246C0F430018A3EF /* UIFont_TextStyle+TestableRandom.swift */,
+				5AE81678246BFC29004E7185 /* Int+TestableRandom.swift */,
+				5AE8167A246BFCB6004E7185 /* String+TestableRandom.swift */,
 			);
-			path = Factory;
-			sourceTree = "<group>";
-		};
-		5AE5F47A24563C7F00FD678D /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				5AE5F47D24563CDE00FD678D /* TheViewControllersFactoryTests.swift */,
-				5AE5F47B24563C8B00FD678D /* FakeViewControllersFactory.swift */,
-			);
-			path = Factory;
+			path = TestableRandom;
 			sourceTree = "<group>";
 		};
 		5AFF3D392451BD7D00270403 = {
@@ -297,8 +564,14 @@
 		5AFF3D442451BD7D00270403 /* TimersApp */ = {
 			isa = PBXGroup;
 			children = (
-				5AE5F47724563C5E00FD678D /* Factory */,
+				5A65D5AF246AC5B000B0667B /* Custom Views */,
+				5AE81670246BF87F004E7185 /* ErrorShowing.swift */,
+				5AA786D1246432F000576003 /* Viper */,
+				5A6CB0A224631AFC00AE5C98 /* Alert */,
+				5A6CB09A2463171900AE5C98 /* Entities */,
+				5A87A6B92458D9BB009D4E13 /* Services */,
 				5AFF3D6A2451EE0B00270403 /* Scenes */,
+				5ADB207B246022500045675C /* Helpers */,
 				5AFF3D452451BD7D00270403 /* AppDelegate.swift */,
 				5AFF3D472451BD7D00270403 /* SceneDelegate.swift */,
 				5AFF3D512451BDA800270403 /* Assets.xcassets */,
@@ -312,8 +585,13 @@
 		5AFF3D5E2451BDAE00270403 /* TimersAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				5AE5F47A24563C7F00FD678D /* Factory */,
+				5A4BC3A02472B99500D35E45 /* Alert */,
+				5AE81672246BF977004E7185 /* Custom Views */,
+				5A5A56FD2464753A00469D9C /* Services */,
+				5AA786D624643CCA00576003 /* Viper */,
+				5ABAC9152463587C001E7E3F /* Entities */,
 				5AFF3D6E2451F5C300270403 /* Scenes */,
+				5A6CB0B42463543000AE5C98 /* Extensions */,
 				5AE5F4682456308500FD678D /* Helpers */,
 				5AFF3D612451BDAE00270403 /* Info.plist */,
 			);
@@ -323,8 +601,8 @@
 		5AFF3D6A2451EE0B00270403 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				5AE5F4572456162F00FD678D /* NewTimer */,
 				5AFF3D6B2451EE3100270403 /* TimersList */,
+				5AE5F4572456162F00FD678D /* NewTimer */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -332,11 +610,14 @@
 		5AFF3D6B2451EE3100270403 /* TimersList */ = {
 			isa = PBXGroup;
 			children = (
+				5A87A6B02458C272009D4E13 /* TimersListContract.swift */,
+				5AE5F45A245628C400FD678D /* TimersListConfigurator.swift */,
+				5AFF3D6C2451EE4B00270403 /* TimersListViewController.swift */,
+				5A87A6A82458C045009D4E13 /* TimersListInteractor.swift */,
+				5AE5F45D245628F500FD678D /* TimersListPresenter.swift */,
+				5AE5F46024562A1F00FD678D /* TimersListRouter.swift */,
 				5A39C14B24561116004889CD /* Views */,
 				5AE5F46224562A5100FD678D /* ViewModels */,
-				5AE5F45C245628EC00FD678D /* Presenter */,
-				5AE5F45F24562A0F00FD678D /* Router */,
-				5AE5F45A245628C400FD678D /* TimersListConfigurator.swift */,
 			);
 			path = TimersList;
 			sourceTree = "<group>";
@@ -353,9 +634,13 @@
 		5AFF3D6F2451F5D600270403 /* TimersList */ = {
 			isa = PBXGroup;
 			children = (
+				5AA786DC2464406D00576003 /* TimersListConfiguratorTests.swift */,
+				5AFF3D702451F5E400270403 /* TimersListViewControllerTests.swift */,
+				5A6CB098246310CA00AE5C98 /* TimersListInteractorTests.swift */,
+				5AE5F46E2456319100FD678D /* TimersListPresenterTests.swift */,
+				5AE5F471245632FE00FD678D /* TimersListRouterTests.swift */,
 				5AE5F4632456302C00FD678D /* Views */,
-				5AE5F4652456304600FD678D /* Presenter */,
-				5AE5F470245632E900FD678D /* Router */,
+				5A5A570324647C1600469D9C /* Mocks */,
 			);
 			path = TimersList;
 			sourceTree = "<group>";
@@ -460,20 +745,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A87A6A92458C045009D4E13 /* TimersListInteractor.swift in Sources */,
+				5ADF3B442469B93E00008729 /* SimpleAlertPresenter.swift in Sources */,
+				5AE444AB246860B900736A83 /* CustomDatePicker.swift in Sources */,
 				5AFF3D462451BD7D00270403 /* AppDelegate.swift in Sources */,
+				5ADB20802460A82F0045675C /* NewTimerViewControllerTextFieldsController.swift in Sources */,
 				5AE5F4592456168A00FD678D /* NewTimerViewController.swift in Sources */,
+				5A65D5B1246AC6CC00B0667B /* DynamicTypeLabel.swift in Sources */,
+				5AE444A62468578C00736A83 /* TimerPresentationModel.swift in Sources */,
 				5AE5F46124562A1F00FD678D /* TimersListRouter.swift in Sources */,
 				5A87A69A24575072009D4E13 /* NewTimerRouter.swift in Sources */,
+				5A6CB09F2463175500AE5C98 /* Result.swift in Sources */,
+				5A9FB7F5245F576A00FCCD8B /* NewTimerInteractor.swift in Sources */,
 				5AE5F45B245628C400FD678D /* TimersListConfigurator.swift in Sources */,
 				5A87A69724572D8A009D4E13 /* NewTimerConfigurator.swift in Sources */,
+				5A65D5B3246AC70700B0667B /* DynamicTypeTextField.swift in Sources */,
+				5A87A6A72458501B009D4E13 /* Array+GetElement.swift in Sources */,
+				5A87A6AF2458C0AE009D4E13 /* Timer.swift in Sources */,
+				5A87A6B82458D9A7009D4E13 /* StaticTimerService.swift in Sources */,
+				5AA786D32464332A00576003 /* ViperConfiguratingModel.swift in Sources */,
+				5A00136124743FD100515701 /* TimerService.swift in Sources */,
 				5AFF3D482451BD7D00270403 /* SceneDelegate.swift in Sources */,
 				5A87A69524571F9A009D4E13 /* NewTimerPresenter.swift in Sources */,
+				5ADF3B482469CF4E00008729 /* SimpleAlertShowing.swift in Sources */,
+				5AA786D52464344F00576003 /* SimplyInitializing.swift in Sources */,
+				5A6CB09D2463174100AE5C98 /* TimerServicing.swift in Sources */,
+				5A00135F24743EF500515701 /* Array+ElementExists.swift in Sources */,
 				5AFF3D7524522B6300270403 /* TimerTableViewCell.swift in Sources */,
-				5AE5F47924563C6A00FD678D /* ViewControllersFactory.swift in Sources */,
+				5A6CB0A12463177100AE5C98 /* TimerServicingError.swift in Sources */,
+				5ADB207D2460226A0045675C /* Margins.swift in Sources */,
+				5ADF3B462469CF2200008729 /* UIAlertController.swift in Sources */,
 				5AFF3D6D2451EE4B00270403 /* TimersListViewController.swift in Sources */,
 				5AFF3D7724522ED400270403 /* TimerCellViewModel.swift in Sources */,
 				5AE5F45E245628F500FD678D /* TimersListPresenter.swift in Sources */,
+				5ADF3B422469B5C600008729 /* NewTimerValidationError.swift in Sources */,
+				5A87A6B12458C272009D4E13 /* TimersListContract.swift in Sources */,
 				5AFF3D502451BD7D00270403 /* TimersApp.xcdatamodeld in Sources */,
+				5AE81671246BF87F004E7185 /* ErrorShowing.swift in Sources */,
+				5A87A6B32458CF65009D4E13 /* NewTimerContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,19 +791,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AE5F4742456334C00FD678D /* MockTimersListRouter.swift in Sources */,
+				5AE81677246BFC1C004E7185 /* CGRect+TestableRandom.swift in Sources */,
+				5A6CB0B62463545900AE5C98 /* Array+GetElementTests.swift in Sources */,
+				5ACCB2D724600576002C64D2 /* MockTimersListInteractor.swift in Sources */,
+				5AE444A2246856FA00736A83 /* MockTimerService.swift in Sources */,
+				5A00136E247444F700515701 /* Timer+CustomStringConvertible.swift in Sources */,
+				5A718F15246D4E4600A12EC1 /* MockTimerResult.swift in Sources */,
+				5A65D5B7246B027900B0667B /* MockNewTimerRouter.swift in Sources */,
 				5AE5F47624563C2500FD678D /* NonAnimatedViewController.swift in Sources */,
-				5AE5F47C24563C8B00FD678D /* FakeViewControllersFactory.swift in Sources */,
 				5A87A69D24577272009D4E13 /* NewTimerViewControllerTests.swift in Sources */,
+				5A00135C2473E91800515701 /* StaticTimerServiceTests.swift in Sources */,
+				5A65D5B9246B029100B0667B /* MockNewTimerInteractor.swift in Sources */,
+				5AE81674246BF994004E7185 /* DynamicTypeLabelTests.swift in Sources */,
+				5AE8167F246C0BCB004E7185 /* DynamicTypeTextFieldTests.swift in Sources */,
 				5AE5F472245632FE00FD678D /* TimersListRouterTests.swift in Sources */,
+				5A65D5B5246AFCEA00B0667B /* NewTimerPresenterTests.swift in Sources */,
+				5AE8167D246BFF03004E7185 /* TestableRandom.swift in Sources */,
+				5A5A57012464789500469D9C /* NewTimerConfiguratorTests.swift in Sources */,
+				5ABAC919246359A6001E7E3F /* NewTimerRouterTests.swift in Sources */,
 				5A87A6A3245778B6009D4E13 /* MockNewTimerPresenter.swift in Sources */,
+				5A65D5BB246B029800B0667B /* MockNewTimerView.swift in Sources */,
+				5A001365247442EF00515701 /* MockNewTimerInteractingDelegate.swift in Sources */,
+				5ABAC917246358A5001E7E3F /* TimerTests.swift in Sources */,
+				5AE8167B246BFCB6004E7185 /* String+TestableRandom.swift in Sources */,
+				5A4BC3A22472B9B500D35E45 /* MockAlertPresenter.swift in Sources */,
 				5AE5F46D245630C400FD678D /* UIBarButtonItem+Tapable.swift in Sources */,
-				5AE5F47E24563CDE00FD678D /* TheViewControllersFactoryTests.swift in Sources */,
 				5AFF3D712451F5E400270403 /* TimersListViewControllerTests.swift in Sources */,
 				5AE5F4672456305900FD678D /* MockTimersListPresenter.swift in Sources */,
+				5ACCB2D524600562002C64D2 /* FakeTimersListInteractor.swift in Sources */,
+				5AA786DD2464406D00576003 /* TimersListConfiguratorTests.swift in Sources */,
+				5AE444A0246856BE00736A83 /* MockError.swift in Sources */,
+				5A0013682474445C00515701 /* TimerPresentationFactory.swift in Sources */,
+				5AE444A42468574A00736A83 /* MockTimersListInteractingDelegate.swift in Sources */,
+				5A6CB099246310CB00AE5C98 /* TimersListInteractorTests.swift in Sources */,
+				5AA786D824643CF700576003 /* ViperConfiguratingModelTests.swift in Sources */,
+				5A0013632474423A00515701 /* TimerPresentationModel+Equatable.swift in Sources */,
 				5A87A6A0245776D3009D4E13 /* UIBarButtonItem+SystemItem.swift in Sources */,
 				5AE5F46B2456309700FD678D /* Tapable.swift in Sources */,
 				5AE5F46F2456319100FD678D /* TimersListPresenterTests.swift in Sources */,
+				5A00136A2474449B00515701 /* TimerResult+Equatable.swift in Sources */,
+				5A718F12246D4E1900A12EC1 /* FakeTimerService.swift in Sources */,
+				5A5A56FF2464759800469D9C /* DummyTimerService.swift in Sources */,
+				5AE81679246BFC29004E7185 /* Int+TestableRandom.swift in Sources */,
+				5AB78F3B246C0F430018A3EF /* UIFont_TextStyle+TestableRandom.swift in Sources */,
+				5AB78F3D246C0FA50018A3EF /* NewTimerInteractorTests.swift in Sources */,
+				5ADB20832460A9190045675C /* NewTimerViewControllerTextFieldsControllerTests.swift in Sources */,
+				5AA786DB24643FF900576003 /* DummySimplyInitializing.swift in Sources */,
+				5ACCB2D92460058B002C64D2 /* MockTimersListViewController.swift in Sources */,
 				5AFF3D7324522A9500270403 /* TimerTableViewCellTests.swift in Sources */,
+				5ABAC91B24635B91001E7E3F /* NonAnimatedDismissViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
