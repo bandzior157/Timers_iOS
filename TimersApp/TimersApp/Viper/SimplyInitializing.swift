@@ -6,6 +6,7 @@
 //  Copyright © 2020 Łukasz Bazior. All rights reserved.
 //
 
+@available(*, deprecated)
 protocol SimplyInitializing {
     init()
 }

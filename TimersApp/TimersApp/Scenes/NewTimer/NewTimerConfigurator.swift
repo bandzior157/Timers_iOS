@@ -9,24 +9,25 @@
 import UIKit
 
 class NewTimerConfigurator {
-    static func configure(_ service: TimerServicing = StaticTimerService(), model: ViperConfiguratingModel<NewTimerViewController, NewTimerInteractor, NewTimerPresenter, NewTimerRouter> = ViperConfiguratingModel(), _ onDismiss: OnDismissCallback?) -> UIViewController {
-        model.viewController.presenter = model.presenter
+    static func configure(
+        viewController: NewTimerViewController = NewTimerViewController(),
+        interactor: NewTimerInteractor = NewTimerInteractor(),
+        presenter: NewTimerPresenter = NewTimerPresenter(),
+        router: NewTimerRouter = NewTimerRouter(),
+        service: TimerServicing = StaticTimerService(),
+        onDismiss: OnDismissCallback?) -> UIViewController {
+        viewController.presenter = presenter
     
-        model.interactor.service = service
-        model.interactor.delegate = model.presenter
+        interactor.service = service
+        interactor.delegate = presenter
         
-        model.presenter.router = model.router
-        model.presenter.interactor = model.interactor
-        model.presenter.view = model.viewController
+        presenter.router = router
+        presenter.interactor = interactor
+        presenter.view = viewController
         
-        model.router.viewController = model.viewController
-        model.router.onDismiss = onDismiss
+        router.viewController = viewController
+        router.onDismiss = onDismiss
 
-        return model.viewController
+        return viewController
     }
 }
-
-extension NewTimerViewController: SimplyInitializing {}
-extension NewTimerInteractor: SimplyInitializing {}
-extension NewTimerPresenter: SimplyInitializing {}
-extension NewTimerRouter: SimplyInitializing {}

@@ -12,7 +12,7 @@ final class TimersListRouter: TimersListRouting {
     var viewController: UIViewController?
             
     func routeToNewTimer(_ onDismiss: OnDismissCallback? = nil) {
-        let viewController = UINavigationController(rootViewController: NewTimerConfigurator.configure(TimerService.shared, onDismiss))
+        let viewController = UINavigationController(rootViewController: NewTimerConfigurator.configure(service: TimerService.shared, onDismiss: onDismiss))
         present(viewController)
     }
     

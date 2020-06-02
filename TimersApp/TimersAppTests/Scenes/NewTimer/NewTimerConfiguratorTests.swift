@@ -16,11 +16,7 @@ class NewTimerConfiguratorTests: XCTestCase {
     let interactor = NewTimerInteractor()
     let presenter = NewTimerPresenter()
     let router = NewTimerRouter()
-    
-    lazy var model: ViperConfiguratingModel = {
-        ViperConfiguratingModel(viewController: viewController, interactor: interactor, presenter: presenter, router: router)
-    }()
-    
+        
     let onDismiss: OnDismissCallback = { }
     
     override func setUp() {
@@ -59,6 +55,6 @@ class NewTimerConfiguratorTests: XCTestCase {
     // MARK: - Helpers
     
     private func configure() {
-        let _ = NewTimerConfigurator.configure(service, model: model, onDismiss)
+        let _ = NewTimerConfigurator.configure(viewController: viewController, interactor: interactor, presenter: presenter, router: router, service: service, onDismiss: onDismiss)
     }
 }
