@@ -17,10 +17,6 @@ class TimersListConfiguratorTests: XCTestCase {
     let presenter = TimersListPresenter()
     let router = TimersListRouter()
     
-    lazy var model: ViperConfiguratingModel = {
-        ViperConfiguratingModel(viewController: viewController, interactor: interactor, presenter: presenter, router: router)
-    }()
-    
     override func setUp() {
         configure()
     }
@@ -57,6 +53,6 @@ class TimersListConfiguratorTests: XCTestCase {
     // MARK: - Helpers
     
     private func configure() {
-        let _ = TimersListConfigurator.configure(service, model: model)
+        let _ = TimersListConfigurator.configure(viewController: viewController, interactor: interactor, presenter: presenter, router: router, service: service)
     }
 }

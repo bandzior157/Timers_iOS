@@ -9,23 +9,24 @@
 import UIKit
 
 class TimersListConfigurator {
-    static func configure(_ service: TimerServicing = StaticTimerService(), model: ViperConfiguratingModel<TimersListViewController, TimersListInteractor, TimersListPresenter, TimersListRouter> = ViperConfiguratingModel()) -> UIViewController {
-        model.viewController.presenter = model.presenter
+    static func configure(
+        viewController: TimersListViewController = TimersListViewController(),
+        interactor: TimersListInteractor = TimersListInteractor(),
+        presenter: TimersListPresenter = TimersListPresenter(),
+        router: TimersListRouter = TimersListRouter(),
+        service: TimerServicing = StaticTimerService()
+    ) -> UIViewController {
+        viewController.presenter = presenter
         
-        model.interactor.service = service
-        model.interactor.delegate = model.presenter
+        interactor.service = service
+        interactor.delegate = presenter
         
-        model.presenter.router = model.router
-        model.presenter.interactor = model.interactor
-        model.presenter.view = model.viewController
+        presenter.router = router
+        presenter.interactor = interactor
+        presenter.view = viewController
                 
-        model.router.viewController = model.viewController
+        router.viewController = viewController
 
-        return model.viewController
+        return viewController
     }
 }
-
-extension TimersListViewController: SimplyInitializing {}
-extension TimersListInteractor: SimplyInitializing {}
-extension TimersListPresenter: SimplyInitializing {}
-extension TimersListRouter: SimplyInitializing {}

@@ -15,7 +15,8 @@ class NewTimerConfigurator {
         presenter: NewTimerPresenter = NewTimerPresenter(),
         router: NewTimerRouter = NewTimerRouter(),
         service: TimerServicing = StaticTimerService(),
-        onDismiss: OnDismissCallback?) -> UIViewController {
+        onDismiss: OnDismissCallback?
+    ) -> UIViewController {
         viewController.presenter = presenter
     
         interactor.service = service

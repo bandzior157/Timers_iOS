@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
                 
-        let timersListViewController = TimersListConfigurator.configure(TimerService.shared)
+        let timersListViewController = TimersListConfigurator.configure(service: TimerService.shared)
         let navigationController = UINavigationController(rootViewController: timersListViewController)
         navigationController.navigationBar.prefersLargeTitles = true
 
