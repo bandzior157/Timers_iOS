@@ -16,7 +16,18 @@ final class TimersListRouter: TimersListRouting {
         present(viewController)
     }
     
+    func route(to timer: Timer) {
+        let viewController = EditTimerViewController()
+        present(viewController)
+    }
+    
     private func present(_ viewControllerToPresent: UIViewController) {
         viewController?.present(viewControllerToPresent, animated: true)
+    }
+}
+
+class EditTimerViewController: UIViewController {
+    override func viewDidLoad() {
+        title = "E"
     }
 }

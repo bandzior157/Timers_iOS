@@ -16,4 +16,8 @@ class MockTimersListRouter: TimersListRouting {
         routeToNewTimerCounter += 1
         self.onDismiss = onDismiss
     }
+    
+    func route(to timer: Timer) {
+        
+    }
 }

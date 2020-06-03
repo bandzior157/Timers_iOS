@@ -31,5 +31,6 @@ protocol TimersListPresenting: class {
 
 typealias OnDismissCallback = ( () -> () )
 protocol TimersListRouting: class {
+    func route(to timer: Timer)
     func routeToNewTimer(_ onDismiss: OnDismissCallback?)
 }
