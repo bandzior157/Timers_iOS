@@ -10,6 +10,7 @@ typealias TimerResult = Result<[Timer], Error>
 
 protocol TimersListViewing: class, ErrorShowing {
     func update(viewModels: [TimerCellViewModel])
+    func updateEditingEnabled(_ flag: Bool)
 }
 
 protocol TimersListInteracting: class {

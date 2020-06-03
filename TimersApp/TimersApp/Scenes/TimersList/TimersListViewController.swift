@@ -27,7 +27,7 @@ final class TimersListViewController: UITableViewController {
 
         setupTableView()
         setupAddButton()
-        setupEditButton()
+        updateLeftBarButton(editingEnabled: false)
     }
     
     private func setupTableView() {
@@ -36,10 +36,6 @@ final class TimersListViewController: UITableViewController {
     
     private func setupAddButton() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(newTimerButtonTapped))
-    }
-    
-    private func setupEditButton() {
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editButtonTapped))
     }
     
     @objc private func newTimerButtonTapped() {
@@ -65,6 +61,10 @@ final class TimersListViewController: UITableViewController {
 }
 
 extension TimersListViewController: TimersListViewing {
+    func updateEditingEnabled(_ editingEnabled: Bool) {
+        updateLeftBarButton(editingEnabled: editingEnabled)
+    }
+    
     func update(viewModels: [TimerCellViewModel]) {
         timerViewModels = viewModels
     }
@@ -73,5 +73,23 @@ extension TimersListViewController: TimersListViewing {
 extension TimersListViewController: ErrorShowing {
     func show(message: String) {
         alertPresenter?.show(message: message, from: self)
+    }
+}
+
+extension TimersListViewController {
+    private func updateLeftBarButton(editingEnabled: Bool) {
+        if editingEnabled {
+            setLeftBarButtonAsOK()
+        } else {
+            setLeftBarButtonAsEdit()
+        }
+    }
+    
+    private func setLeftBarButtonAsOK() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "OK", style: .plain, target: self, action: #selector(editButtonTapped))
+    }
+    
+    private func setLeftBarButtonAsEdit() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editButtonTapped))
     }
 }

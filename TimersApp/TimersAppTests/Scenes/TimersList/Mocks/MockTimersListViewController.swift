@@ -16,6 +16,10 @@ class MockTimersListViewController: TimersListViewing {
         updateCounter += 1
     }
     
+    func updateEditingEnabled(_ flag: Bool) {
+        
+    }
+    
     func show(message: String) {
         showedMessages.append(message)
     }

@@ -51,19 +51,6 @@ class TimersListViewControllerTests: XCTestCase {
         XCTAssertEqual(tableView.deselectedRows.getElement(at: 0)?.animated, true)
     }
     
-    func test_leftBarButtonItem_isRendered() {
-        let sut = makeSUT()
-        let presenter = MockTimersListPresenter()
-        sut.presenter = presenter
-        
-        let button = sut.navigationItem.leftBarButtonItem
-        XCTAssertNotNil(button)
-        XCTAssertEqual(button?.systemItem, UIBarButtonItem.SystemItem.edit)
-        
-        button?.tap()
-        XCTAssertEqual(presenter.didTapEditButtonCounter, 1)
-    }
-    
     func test_didSelectElementAtIndex_callsPresenter_everyTime() {
         let sut = makeSUT()
         let presenter = MockTimersListPresenter()
@@ -78,7 +65,39 @@ class TimersListViewControllerTests: XCTestCase {
         sut.tableView(sut.tableView, didSelectRowAt: indexPath2)
         XCTAssertEqual(presenter.selectedElementIndexes, [indexPath.row, indexPath2.row, indexPath2.row])
     }
+    
+    
+    // MARK: - LeftBarButton
+    
+    func test_leftBarButton_tap_callsPresenter() {
+        let sut = makeSUT()
+        let presenter = MockTimersListPresenter()
+        sut.presenter = presenter
+                
+        sut.leftBarButton?.tap()
+        XCTAssertEqual(presenter.didTapEditButtonCounter, 1)
+    }
+    
+    func test_leftBarButton_initialRenderedAsEdit() {
+        let sut = makeSUT()
+        let editButton = sut.navigationItem.leftBarButtonItem
+        XCTAssertEqual(editButton?.systemItem, .edit)
+    }
+    
+    func test_leftBarButton_renderedAsOK_onUpdateEditingDisabled() {
+        let sut = makeSUT()
+        sut.updateEditingEnabled(true)
+
+        XCTAssertEqual(sut.leftBarButton?.title, "OK")
+    }
         
+    func test_leftBarButton_renderedAsEdit_onUpdateEditingEnabled() {
+        let sut = makeSUT()
+        sut.updateEditingEnabled(false)
+
+        XCTAssertEqual(sut.leftBarButton?.systemItem, .edit)
+    }
+    
     
     // MARK: - Helpers
     
@@ -94,5 +113,11 @@ class MockDeselectedRowsTableView: UITableView {
     
     override func deselectRow(at indexPath: IndexPath, animated: Bool) {
         deselectedRows.append((indexPath, animated))
+    }
+}
+
+private extension TimersListViewController {
+    var leftBarButton: UIBarButtonItem? {
+        self.navigationItem.leftBarButtonItem
     }
 }
