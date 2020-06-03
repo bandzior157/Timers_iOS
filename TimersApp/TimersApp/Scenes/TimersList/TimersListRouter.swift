@@ -28,6 +28,6 @@ final class TimersListRouter: TimersListRouting {
 
 class EditTimerViewController: UIViewController {
     override func viewDidLoad() {
-        title = "E"
+        view.backgroundColor = .lightGray
     }
 }

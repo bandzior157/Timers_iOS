@@ -12,6 +12,7 @@ final class TimersListPresenter: TimersListPresenting {
     weak var view: TimersListViewing?
         
     private var editingEnabled: Bool = false
+    private var timers = [Timer]()
     
     func viewDidLoad() {
         fetchTimers()
@@ -29,7 +30,10 @@ final class TimersListPresenter: TimersListPresenting {
     }
     
     func didSelectElement(at index: Int) {
-        
+        if editingEnabled {
+            guard let timer = timers.getElement(at: index) else { return }
+            router?.route(to: timer)
+        }
     }
     
     private func fetchTimers() {
@@ -44,6 +48,7 @@ final class TimersListPresenter: TimersListPresenting {
 
 extension TimersListPresenter: TimersListInteractingDelegate {
     func timersListInteractor(_ interactor: TimersListInteracting, didFinishWithTimers timers: [Timer]) {
+        self.timers = timers
         updateView(timers)
     }
     

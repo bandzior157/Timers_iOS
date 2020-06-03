@@ -11,6 +11,7 @@
 class MockTimersListRouter: TimersListRouting {
     private(set) var onDismiss: OnDismissCallback?
     private(set) var routeToNewTimerCounter = 0
+    private(set) var routedTimers = [Timer]()
     
     func routeToNewTimer(_ onDismiss: OnDismissCallback?) {
         routeToNewTimerCounter += 1
@@ -18,6 +19,7 @@ class MockTimersListRouter: TimersListRouting {
     }
     
     func route(to timer: Timer) {
-        
+        routedTimers.append(timer)
     }
+    
 }

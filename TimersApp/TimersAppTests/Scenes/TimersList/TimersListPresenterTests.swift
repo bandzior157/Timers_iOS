@@ -64,6 +64,27 @@ class TimersListPresenterTests: XCTestCase {
         XCTAssertEqual(view.updateEditingEnabled, [true, false, true])
     }
     
+    func test_routeToTimerWhenEditingEnabled() {
+        let firstTimer = TimersApp.Timer(title: "First", body: "First body")
+        let secondTimer = TimersApp.Timer(title: "Second", body: "Second body")
+        let thirdTimer = TimersApp.Timer(title: "Third", body: "Third body")
+        let timers = [firstTimer, secondTimer, thirdTimer]
+        
+        let interactor = FakeTimersListInteractor(result: .success(timers))
+        let sut = makeSUT(interactor: interactor)
+        interactor.delegate = sut
+        
+        sut.viewDidLoad()
+        
+        sut.didSelectElement(at: 2)
+        XCTAssertEqual(router.routedTimers, [])
+        
+        sut.didTapEditButton()
+        
+        sut.didSelectElement(at: 2)
+        XCTAssertEqual(router.routedTimers, [thirdTimer])
+    }
+    
     
     // MARK: - Helpers
     
