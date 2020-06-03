@@ -51,6 +51,34 @@ class TimersListViewControllerTests: XCTestCase {
         XCTAssertEqual(tableView.deselectedRows.getElement(at: 0)?.animated, true)
     }
     
+    func test_leftBarButtonItem_isRendered() {
+        let sut = makeSUT()
+        let presenter = MockTimersListPresenter()
+        sut.presenter = presenter
+        
+        let button = sut.navigationItem.leftBarButtonItem
+        XCTAssertNotNil(button)
+        XCTAssertEqual(button?.systemItem, UIBarButtonItem.SystemItem.edit)
+        
+        button?.tap()
+        XCTAssertEqual(presenter.didTapEditButtonCounter, 1)
+    }
+    
+    func test_didSelectElementAtIndex_callsPresenter_everyTime() {
+        let sut = makeSUT()
+        let presenter = MockTimersListPresenter()
+        sut.presenter = presenter
+        
+        let indexPath = IndexPath(row: 3, section: 0)
+        sut.tableView(sut.tableView, didSelectRowAt: indexPath)
+        XCTAssertEqual(presenter.selectedElementIndexes, [indexPath.row])
+        
+        let indexPath2 = IndexPath(row: 13, section: 0)
+        sut.tableView(sut.tableView, didSelectRowAt: indexPath2)
+        sut.tableView(sut.tableView, didSelectRowAt: indexPath2)
+        XCTAssertEqual(presenter.selectedElementIndexes, [indexPath.row, indexPath2.row, indexPath2.row])
+    }
+        
     
     // MARK: - Helpers
     

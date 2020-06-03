@@ -24,6 +24,8 @@ protocol TimersListInteractingDelegate: class {
 protocol TimersListPresenting: class {
     func viewDidLoad()
     func didTapAddButton()
+    func didTapEditButton()
+    func didSelectElement(at index: Int)
 }
 
 typealias OnDismissCallback = ( () -> () )

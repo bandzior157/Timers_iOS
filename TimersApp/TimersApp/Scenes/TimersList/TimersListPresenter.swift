@@ -10,7 +10,7 @@ final class TimersListPresenter: TimersListPresenting {
     var router: TimersListRouting?
     var interactor: TimersListInteracting?
     weak var view: TimersListViewing?
-    
+        
     func viewDidLoad() {
         fetchTimers()
     }
@@ -21,6 +21,14 @@ final class TimersListPresenter: TimersListPresenting {
         }
     }
         
+    func didTapEditButton() {
+        
+    }
+    
+    func didSelectElement(at index: Int) {
+        
+    }
+    
     private func fetchTimers() {
         interactor?.fetchTimers()
     }

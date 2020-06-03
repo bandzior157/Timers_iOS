@@ -27,6 +27,7 @@ final class TimersListViewController: UITableViewController {
 
         setupTableView()
         setupAddButton()
+        setupEditButton()
     }
     
     private func setupTableView() {
@@ -37,8 +38,16 @@ final class TimersListViewController: UITableViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(newTimerButtonTapped))
     }
     
+    private func setupEditButton() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editButtonTapped))
+    }
+    
     @objc private func newTimerButtonTapped() {
         presenter?.didTapAddButton()
+    }
+    
+    @objc private func editButtonTapped() {
+        presenter?.didTapEditButton()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,6 +60,7 @@ final class TimersListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        presenter?.didSelectElement(at: indexPath.row)
     }
 }
 
