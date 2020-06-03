@@ -11,7 +11,12 @@ final class TimersListPresenter: TimersListPresenting {
     var interactor: TimersListInteracting?
     weak var view: TimersListViewing?
         
-    private var editingEnabled: Bool = false
+    private var editingEnabled: Bool = false {
+        didSet {
+            view?.updateEditingEnabled(editingEnabled)
+        }
+    }
+    
     private var timers = [Timer]()
     
     func viewDidLoad() {
@@ -26,7 +31,6 @@ final class TimersListPresenter: TimersListPresenting {
         
     func didTapEditButton() {
         editingEnabled.toggle()
-        view?.updateEditingEnabled(editingEnabled)
     }
     
     func didSelectElement(at index: Int) {
