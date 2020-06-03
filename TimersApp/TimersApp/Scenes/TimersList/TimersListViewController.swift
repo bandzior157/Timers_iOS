@@ -86,7 +86,7 @@ extension TimersListViewController {
     }
     
     private func setLeftBarButtonAsOK() {
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "OK", style: .plain, target: self, action: #selector(editButtonTapped))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "OK", style: .done, target: self, action: #selector(editButtonTapped))
     }
     
     private func setLeftBarButtonAsEdit() {
