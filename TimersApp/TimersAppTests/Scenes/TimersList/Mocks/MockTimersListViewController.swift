@@ -11,13 +11,14 @@
 class MockTimersListViewController: TimersListViewing {
     private(set) var updateCounter = 0
     private(set) var showedMessages = [String]()
+    private(set) var updateEditingEnabled = [Bool]()
     
     func update(viewModels: [TimerCellViewModel]) {
         updateCounter += 1
     }
     
     func updateEditingEnabled(_ flag: Bool) {
-        
+        updateEditingEnabled.append(flag)
     }
     
     func show(message: String) {

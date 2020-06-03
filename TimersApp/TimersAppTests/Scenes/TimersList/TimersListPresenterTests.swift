@@ -56,6 +56,14 @@ class TimersListPresenterTests: XCTestCase {
         XCTAssertEqual(view.showedMessages.count, 1)
     }
     
+    func test_viewDidTapEditButton_toggleEditingEnabled() {
+        let sut = makeSUT()
+        sut.didTapEditButton()
+        sut.didTapEditButton()
+        sut.didTapEditButton()
+        XCTAssertEqual(view.updateEditingEnabled, [true, false, true])
+    }
+    
     
     // MARK: - Helpers
     
