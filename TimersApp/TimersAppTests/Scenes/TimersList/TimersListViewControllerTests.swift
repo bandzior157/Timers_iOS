@@ -71,19 +71,15 @@ class TimersListViewControllerTests: XCTestCase {
     
     func test_leftBarButton_tap_callsPresenter() {
         let sut = makeSUT()
+        sut.updateEditingEnabled(false)
+        
         let presenter = MockTimersListPresenter()
         sut.presenter = presenter
                 
         sut.leftBarButton?.tap()
         XCTAssertEqual(presenter.didTapEditButtonCounter, 1)
     }
-    
-    func test_leftBarButton_initialRenderedAsEdit() {
-        let sut = makeSUT()
-        let editButton = sut.navigationItem.leftBarButtonItem
-        XCTAssertEqual(editButton?.systemItem, .edit)
-    }
-    
+        
     func test_leftBarButton_renderedAsOK_onUpdateEditingDisabled() {
         let sut = makeSUT()
         sut.updateEditingEnabled(true)

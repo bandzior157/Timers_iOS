@@ -20,6 +20,7 @@ final class TimersListPresenter: TimersListPresenting {
     private var timers = [Timer]()
     
     func viewDidLoad() {
+        editingEnabled = false
         fetchTimers()
     }
     

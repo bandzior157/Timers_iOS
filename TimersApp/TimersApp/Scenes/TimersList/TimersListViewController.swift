@@ -27,7 +27,6 @@ final class TimersListViewController: UITableViewController {
 
         setupTableView()
         setupAddButton()
-        updateLeftBarButton(editingEnabled: false)
     }
     
     private func setupTableView() {

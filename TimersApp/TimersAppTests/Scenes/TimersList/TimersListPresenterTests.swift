@@ -19,6 +19,11 @@ class TimersListPresenterTests: XCTestCase {
         XCTAssertEqual(router.routeToNewTimerCounter, 1)
     }
     
+    func test_updateEditingDisabled_onViewDidLoad() {
+        makeSUT().viewDidLoad()
+        XCTAssertEqual(view.updateEditingEnabled, [false])
+    }
+    
     func test_fetchTimers_onViewDidLoad() {
         let interactor = MockTimersListInteractor()
         makeSUT(interactor: interactor).viewDidLoad()
