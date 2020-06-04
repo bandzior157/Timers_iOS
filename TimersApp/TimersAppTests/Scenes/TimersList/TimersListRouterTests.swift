@@ -28,7 +28,7 @@ class TimersListRouterTests: XCTestCase {
         
         let timer = TimersApp.Timer.init(title: "A", body: "B")
         sut.route(to: timer)
-        XCTAssertTrue(viewController.visibleViewController is EditTimerViewController)
+        XCTAssertTrue(viewController.visibleViewController is NewTimerViewController)
     }
     
     

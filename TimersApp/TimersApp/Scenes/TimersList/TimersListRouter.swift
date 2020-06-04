@@ -17,17 +17,11 @@ final class TimersListRouter: TimersListRouting {
     }
     
     func route(to timer: Timer) {
-        let viewController = EditTimerViewController()
+        let viewController = UINavigationController(rootViewController: EditTimerConfigurator.configure(service: TimerService.shared))
         present(viewController)
     }
     
     private func present(_ viewControllerToPresent: UIViewController) {
         viewController?.present(viewControllerToPresent, animated: true)
-    }
-}
-
-class EditTimerViewController: UIViewController {
-    override func viewDidLoad() {
-        view.backgroundColor = .lightGray
     }
 }
