@@ -17,6 +17,7 @@
 		5A00136E247444F700515701 /* Timer+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A00136D247444F700515701 /* Timer+CustomStringConvertible.swift */; };
 		5A2CC2352489055F002EFC62 /* NewTimerViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2CC2342489055F002EFC62 /* NewTimerViewViewModel.swift */; };
 		5A2CC2382489083E002EFC62 /* EditTimerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2CC2372489083E002EFC62 /* EditTimerConfigurator.swift */; };
+		5A2CC23B248909EB002EFC62 /* EditTimerConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2CC23A248909EB002EFC62 /* EditTimerConfiguratorTests.swift */; };
 		5A4BC3A22472B9B500D35E45 /* MockAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4BC3A12472B9B500D35E45 /* MockAlertPresenter.swift */; };
 		5A5A56FF2464759800469D9C /* DummyTimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A56FE2464759800469D9C /* DummyTimerService.swift */; };
 		5A5A57012464789500469D9C /* NewTimerConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A57002464789500469D9C /* NewTimerConfiguratorTests.swift */; };
@@ -118,6 +119,7 @@
 		5A00136D247444F700515701 /* Timer+CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+CustomStringConvertible.swift"; sourceTree = "<group>"; };
 		5A2CC2342489055F002EFC62 /* NewTimerViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerViewViewModel.swift; sourceTree = "<group>"; };
 		5A2CC2372489083E002EFC62 /* EditTimerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTimerConfigurator.swift; sourceTree = "<group>"; };
+		5A2CC23A248909EB002EFC62 /* EditTimerConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTimerConfiguratorTests.swift; sourceTree = "<group>"; };
 		5A4BC3A12472B9B500D35E45 /* MockAlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlertPresenter.swift; sourceTree = "<group>"; };
 		5A5A56FE2464759800469D9C /* DummyTimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTimerService.swift; sourceTree = "<group>"; };
 		5A5A57002464789500469D9C /* NewTimerConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerConfiguratorTests.swift; sourceTree = "<group>"; };
@@ -249,6 +251,14 @@
 			isa = PBXGroup;
 			children = (
 				5A2CC2372489083E002EFC62 /* EditTimerConfigurator.swift */,
+			);
+			path = EditTimer;
+			sourceTree = "<group>";
+		};
+		5A2CC239248909D8002EFC62 /* EditTimer */ = {
+			isa = PBXGroup;
+			children = (
+				5A2CC23A248909EB002EFC62 /* EditTimerConfiguratorTests.swift */,
 			);
 			path = EditTimer;
 			sourceTree = "<group>";
@@ -611,6 +621,7 @@
 		5AFF3D6E2451F5C300270403 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				5A2CC239248909D8002EFC62 /* EditTimer */,
 				5A87A69B24577258009D4E13 /* NewTimer */,
 				5AFF3D6F2451F5D600270403 /* TimersList */,
 			);
@@ -820,6 +831,7 @@
 				5AE81679246BFC29004E7185 /* Int+TestableRandom.swift in Sources */,
 				5AB78F3B246C0F430018A3EF /* UIFont_TextStyle+TestableRandom.swift in Sources */,
 				5AB78F3D246C0FA50018A3EF /* NewTimerInteractorTests.swift in Sources */,
+				5A2CC23B248909EB002EFC62 /* EditTimerConfiguratorTests.swift in Sources */,
 				5ADB20832460A9190045675C /* NewTimerViewControllerTextFieldsControllerTests.swift in Sources */,
 				5ACCB2D92460058B002C64D2 /* MockTimersListViewController.swift in Sources */,
 				5AFF3D7324522A9500270403 /* TimerTableViewCellTests.swift in Sources */,
