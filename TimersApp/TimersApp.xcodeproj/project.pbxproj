@@ -15,6 +15,7 @@
 		5A0013682474445C00515701 /* TimerPresentationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0013662474436B00515701 /* TimerPresentationFactory.swift */; };
 		5A00136A2474449B00515701 /* TimerResult+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0013692474449B00515701 /* TimerResult+Equatable.swift */; };
 		5A00136E247444F700515701 /* Timer+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A00136D247444F700515701 /* Timer+CustomStringConvertible.swift */; };
+		5A2CC2352489055F002EFC62 /* NewTimerViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2CC2342489055F002EFC62 /* NewTimerViewViewModel.swift */; };
 		5A4BC3A22472B9B500D35E45 /* MockAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4BC3A12472B9B500D35E45 /* MockAlertPresenter.swift */; };
 		5A5A56FF2464759800469D9C /* DummyTimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A56FE2464759800469D9C /* DummyTimerService.swift */; };
 		5A5A57012464789500469D9C /* NewTimerConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A57002464789500469D9C /* NewTimerConfiguratorTests.swift */; };
@@ -114,6 +115,7 @@
 		5A0013662474436B00515701 /* TimerPresentationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPresentationFactory.swift; sourceTree = "<group>"; };
 		5A0013692474449B00515701 /* TimerResult+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimerResult+Equatable.swift"; sourceTree = "<group>"; };
 		5A00136D247444F700515701 /* Timer+CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+CustomStringConvertible.swift"; sourceTree = "<group>"; };
+		5A2CC2342489055F002EFC62 /* NewTimerViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerViewViewModel.swift; sourceTree = "<group>"; };
 		5A4BC3A12472B9B500D35E45 /* MockAlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlertPresenter.swift; sourceTree = "<group>"; };
 		5A5A56FE2464759800469D9C /* DummyTimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTimerService.swift; sourceTree = "<group>"; };
 		5A5A57002464789500469D9C /* NewTimerConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerConfiguratorTests.swift; sourceTree = "<group>"; };
@@ -231,6 +233,14 @@
 			children = (
 			);
 			path = CustomStringConvertible;
+			sourceTree = "<group>";
+		};
+		5A2CC23324890541002EFC62 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5A2CC2342489055F002EFC62 /* NewTimerViewViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		5A39C14B24561116004889CD /* Views */ = {
@@ -444,6 +454,7 @@
 				5A9FB7F4245F576A00FCCD8B /* NewTimerInteractor.swift */,
 				5A87A69424571F9A009D4E13 /* NewTimerPresenter.swift */,
 				5A87A69924575072009D4E13 /* NewTimerRouter.swift */,
+				5A2CC23324890541002EFC62 /* ViewModel */,
 				5ADF3B402469B5AA00008729 /* Error */,
 				5ADB207E2460A8170045675C /* View */,
 			);
@@ -735,6 +746,7 @@
 				5A00135F24743EF500515701 /* Array+ElementExists.swift in Sources */,
 				5AFF3D7524522B6300270403 /* TimerTableViewCell.swift in Sources */,
 				5A6CB0A12463177100AE5C98 /* TimerServicingError.swift in Sources */,
+				5A2CC2352489055F002EFC62 /* NewTimerViewViewModel.swift in Sources */,
 				5ADB207D2460226A0045675C /* Margins.swift in Sources */,
 				5ADF3B462469CF2200008729 /* UIAlertController.swift in Sources */,
 				5AFF3D6D2451EE4B00270403 /* TimersListViewController.swift in Sources */,

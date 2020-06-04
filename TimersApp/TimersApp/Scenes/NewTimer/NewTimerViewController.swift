@@ -20,12 +20,21 @@ final class NewTimerViewController: UIViewController, NewTimerViewing {
     var presenter: NewTimerPresenting?
     var alertPresenter: SimpleAlertShowing? = SimpleAlertPresenter()
     
+    init(viewModel: NewTimerViewViewModel? = nil) {
+        super.init(nibName: nil, bundle: nil)
+        guard let viewModel = viewModel else { return }
+        self.title = viewModel.title
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.tintColor = .systemTeal
         
-        title = "New timer"
         setupSaveButton()
         setupCancelButton()
         setupContentViews()

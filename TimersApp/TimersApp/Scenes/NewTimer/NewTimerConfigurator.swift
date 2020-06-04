@@ -10,7 +10,7 @@ import UIKit
 
 class NewTimerConfigurator {
     static func configure(
-        viewController: NewTimerViewController = NewTimerViewController(),
+        viewController: NewTimerViewController = NewTimerViewController(viewModel: NewTimerViewViewModel(title: "New timer")),
         interactor: NewTimerInteractor = NewTimerInteractor(),
         presenter: NewTimerPresenter = NewTimerPresenter(),
         router: NewTimerRouter = NewTimerRouter(),

@@ -14,8 +14,14 @@ class NewTimerViewControllerTests: XCTestCase {
     let presenter = MockNewTimerPresenter()
     let alertPresenter = MockAlertPresenter()
 
-    func test_title() {
-        XCTAssertEqual(makeSUT().title, "New timer")
+    func test_defaultNoTitle() {
+        XCTAssertNil(makeSUT().title)
+    }
+    
+    func test_titleInjectedByViewModel() {
+        let viewModel = NewTimerViewViewModel(title: "some title")
+        let sut = NewTimerViewController(viewModel: viewModel)
+        XCTAssertEqual(sut.title, viewModel.title)
     }
     
     func test_cancelButton_isSystemCancelButton_placedLeftOnNavigationBar() {
