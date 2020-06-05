@@ -24,11 +24,6 @@ class TimerEditorViewModelFactoryTests: XCTestCase {
     
 }
 
-protocol TimerEditorViewModelFactoryInterface {
-    func getNew() -> TimerEditorViewModel
-    func getEdit(for timer: TimersApp.Timer) -> TimerEditorViewModel
-}
-
 class TimerEditorViewModelFactory: TimerEditorViewModelFactoryInterface {
     func getNew() -> TimerEditorViewModel {
         TimerEditorViewModel(title: "New timer")
