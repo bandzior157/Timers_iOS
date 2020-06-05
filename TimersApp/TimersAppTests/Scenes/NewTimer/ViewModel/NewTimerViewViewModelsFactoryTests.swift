@@ -54,15 +54,29 @@ class FakeTimerEditorViewModelFactory: TimerEditorViewModelFactoryInterface {
 
 class ViewControllerFactoryTests: XCTestCase {
     
+    private let dummyTimer = TimersApp.Timer(title: "", body: "")
+    private let fakeFactory = FakeTimerEditorViewModelFactory()
+
     func test_newTimer() {
-        let factory = FakeTimerEditorViewModelFactory()
-        let sut = ViewControllerFactory(factory: factory)
-        XCTAssertEqual(sut.newTimerViewController().viewModel, factory.newViewModel)
+        XCTAssertEqual(makeSUT(fakeFactory).newTimerViewController().viewModel, fakeFactory.newViewModel)
     }
+    
+    func test_editTimer() {
+        XCTAssertEqual(makeSUT(fakeFactory).editTimerViewController(for: dummyTimer).viewModel, fakeFactory.editViewModel)
+    }
+    
+    
+    // MARK: - Helpers
+    
+    private func makeSUT(_ timerEditorViewModelFactory: TimerEditorViewModelFactoryInterface) -> ViewControllerFactoryInterface {
+        ViewControllerFactory(factory: timerEditorViewModelFactory)
+    }
+    
 }
 
 protocol ViewControllerFactoryInterface {
     func newTimerViewController() -> NewTimerViewController
+    func editTimerViewController(for timer: TimersApp.Timer) -> NewTimerViewController
 }
 
 class ViewControllerFactory: ViewControllerFactoryInterface {
@@ -74,6 +88,11 @@ class ViewControllerFactory: ViewControllerFactoryInterface {
     
     func newTimerViewController() -> NewTimerViewController {
         let viewModel = timerEditorViewModelFactory.getNew()
+        return NewTimerViewController(viewModel: viewModel)
+    }
+    
+    func editTimerViewController(for timer: TimersApp.Timer) -> NewTimerViewController {
+        let viewModel = timerEditorViewModelFactory.getEdit(for: timer)
         return NewTimerViewController(viewModel: viewModel)
     }
 }
