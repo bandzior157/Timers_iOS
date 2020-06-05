@@ -59,6 +59,8 @@
 		5ACA4DD6248AAA3C00B84B3D /* TimerEditorViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACA4DD5248AAA3C00B84B3D /* TimerEditorViewModelFactory.swift */; };
 		5ACA4DD9248AAAA700B84B3D /* FakeTimerEditorViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACA4DD8248AAAA700B84B3D /* FakeTimerEditorViewModelFactory.swift */; };
 		5ACA4DDB248AAB0A00B84B3D /* ViewControllerFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACA4DDA248AAB0A00B84B3D /* ViewControllerFactoryTests.swift */; };
+		5ACA4DDE248AAB8100B84B3D /* ViewControllerFactoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACA4DDD248AAB8100B84B3D /* ViewControllerFactoryInterface.swift */; };
+		5ACA4DE0248AAB9200B84B3D /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACA4DDF248AAB9200B84B3D /* ViewControllerFactory.swift */; };
 		5ACCB2D524600562002C64D2 /* FakeTimersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCB2D424600562002C64D2 /* FakeTimersListInteractor.swift */; };
 		5ACCB2D724600576002C64D2 /* MockTimersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCB2D624600576002C64D2 /* MockTimersListInteractor.swift */; };
 		5ACCB2D92460058B002C64D2 /* MockTimersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCB2D82460058B002C64D2 /* MockTimersListViewController.swift */; };
@@ -167,6 +169,8 @@
 		5ACA4DD5248AAA3C00B84B3D /* TimerEditorViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEditorViewModelFactory.swift; sourceTree = "<group>"; };
 		5ACA4DD8248AAAA700B84B3D /* FakeTimerEditorViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTimerEditorViewModelFactory.swift; sourceTree = "<group>"; };
 		5ACA4DDA248AAB0A00B84B3D /* ViewControllerFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryTests.swift; sourceTree = "<group>"; };
+		5ACA4DDD248AAB8100B84B3D /* ViewControllerFactoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryInterface.swift; sourceTree = "<group>"; };
+		5ACA4DDF248AAB9200B84B3D /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		5ACCB2D424600562002C64D2 /* FakeTimersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTimersListInteractor.swift; sourceTree = "<group>"; };
 		5ACCB2D624600576002C64D2 /* MockTimersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimersListInteractor.swift; sourceTree = "<group>"; };
 		5ACCB2D82460058B002C64D2 /* MockTimersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimersListViewController.swift; sourceTree = "<group>"; };
@@ -456,6 +460,15 @@
 			path = "Test doubles";
 			sourceTree = "<group>";
 		};
+		5ACA4DDC248AAB7000B84B3D /* ViewControllerFactory */ = {
+			isa = PBXGroup;
+			children = (
+				5ACA4DDD248AAB8100B84B3D /* ViewControllerFactoryInterface.swift */,
+				5ACA4DDF248AAB9200B84B3D /* ViewControllerFactory.swift */,
+			);
+			path = ViewControllerFactory;
+			sourceTree = "<group>";
+		};
 		5ACCB2DA246008A0002C64D2 /* TimersListInteracting */ = {
 			isa = PBXGroup;
 			children = (
@@ -629,6 +642,7 @@
 		5AFF3D6A2451EE0B00270403 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				5ACA4DDC248AAB7000B84B3D /* ViewControllerFactory */,
 				5AFF3D6B2451EE3100270403 /* TimersList */,
 				5AE5F4572456162F00FD678D /* NewTimer */,
 				5A2CC23624890827002EFC62 /* EditTimer */,
@@ -791,6 +805,7 @@
 				5A9FB7F5245F576A00FCCD8B /* NewTimerInteractor.swift in Sources */,
 				5AE5F45B245628C400FD678D /* TimersListConfigurator.swift in Sources */,
 				5A87A69724572D8A009D4E13 /* NewTimerConfigurator.swift in Sources */,
+				5ACA4DE0248AAB9200B84B3D /* ViewControllerFactory.swift in Sources */,
 				5A65D5B3246AC70700B0667B /* DynamicTypeTextField.swift in Sources */,
 				5A87A6A72458501B009D4E13 /* Array+GetElement.swift in Sources */,
 				5A87A6AF2458C0AE009D4E13 /* Timer.swift in Sources */,
@@ -807,6 +822,7 @@
 				5ADB207D2460226A0045675C /* Margins.swift in Sources */,
 				5ACA4DD4248AAA0600B84B3D /* TimerEditorViewModelFactoryInterface.swift in Sources */,
 				5ADF3B462469CF2200008729 /* UIAlertController.swift in Sources */,
+				5ACA4DDE248AAB8100B84B3D /* ViewControllerFactoryInterface.swift in Sources */,
 				5AFF3D6D2451EE4B00270403 /* TimersListViewController.swift in Sources */,
 				5ACA4DD6248AAA3C00B84B3D /* TimerEditorViewModelFactory.swift in Sources */,
 				5AFF3D7724522ED400270403 /* TimerCellViewModel.swift in Sources */,

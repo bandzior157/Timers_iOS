@@ -23,31 +23,3 @@ class TimerEditorViewModelFactoryTests: XCTestCase {
     }
     
 }
-
-protocol ViewControllerFactoryInterface {
-    func newTimerViewController() -> NewTimerViewController
-    func editTimerViewController(for timer: TimersApp.Timer) -> NewTimerViewController
-    func timersListViewController() -> TimersListViewController
-}
-
-class ViewControllerFactory: ViewControllerFactoryInterface {
-    private let timerEditorViewModelFactory: TimerEditorViewModelFactoryInterface
-    
-    init(factory: TimerEditorViewModelFactoryInterface) {
-        self.timerEditorViewModelFactory = factory
-    }
-    
-    func newTimerViewController() -> NewTimerViewController {
-        let viewModel = timerEditorViewModelFactory.getNew()
-        return NewTimerViewController(viewModel: viewModel)
-    }
-    
-    func editTimerViewController(for timer: TimersApp.Timer) -> NewTimerViewController {
-        let viewModel = timerEditorViewModelFactory.getEdit(for: timer)
-        return NewTimerViewController(viewModel: viewModel)
-    }
-    
-    func timersListViewController() -> TimersListViewController {
-        TimersListViewController()
-    }
-}
