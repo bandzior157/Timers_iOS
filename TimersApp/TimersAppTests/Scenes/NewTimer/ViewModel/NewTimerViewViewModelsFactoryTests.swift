@@ -65,6 +65,10 @@ class ViewControllerFactoryTests: XCTestCase {
         XCTAssertEqual(makeSUT(fakeFactory).editTimerViewController(for: dummyTimer).viewModel, fakeFactory.editViewModel)
     }
     
+    func test_timersList() {
+        XCTAssertNotNil(makeSUT(fakeFactory).timersListViewController() as TimersListViewController)
+    }
+    
     
     // MARK: - Helpers
     
@@ -77,6 +81,7 @@ class ViewControllerFactoryTests: XCTestCase {
 protocol ViewControllerFactoryInterface {
     func newTimerViewController() -> NewTimerViewController
     func editTimerViewController(for timer: TimersApp.Timer) -> NewTimerViewController
+    func timersListViewController() -> TimersListViewController
 }
 
 class ViewControllerFactory: ViewControllerFactoryInterface {
@@ -94,5 +99,9 @@ class ViewControllerFactory: ViewControllerFactoryInterface {
     func editTimerViewController(for timer: TimersApp.Timer) -> NewTimerViewController {
         let viewModel = timerEditorViewModelFactory.getEdit(for: timer)
         return NewTimerViewController(viewModel: viewModel)
+    }
+    
+    func timersListViewController() -> TimersListViewController {
+        TimersListViewController()
     }
 }
