@@ -1,12 +1,12 @@
 //
-//  NewTimerViewViewModel.swift
+//  TimerEditorViewModel.swift
 //  TimersApp
 //
 //  Created by Łukasz Bazior on 04/06/2020.
 //  Copyright © 2020 Łukasz Bazior. All rights reserved.
 //
 
-class NewTimerViewViewModel {
+class TimerEditorViewModel {
     let title: String?
     let timerTitleText: String?
     let timerBodyText: String?
@@ -18,9 +18,9 @@ class NewTimerViewViewModel {
     }
 }
 
-extension NewTimerViewViewModel: Equatable {
+extension TimerEditorViewModel: Equatable {
     
-    static func == (lhs: NewTimerViewViewModel, rhs: NewTimerViewViewModel) -> Bool {
+    static func == (lhs: TimerEditorViewModel, rhs: TimerEditorViewModel) -> Bool {
         lhs.title == rhs.title &&
             lhs.timerTitleText == rhs.timerTitleText &&
             lhs.timerBodyText == rhs.timerBodyText

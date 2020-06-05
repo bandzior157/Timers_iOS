@@ -10,7 +10,7 @@ import UIKit
 
 class EditTimerConfigurator {
     static func configure(
-        viewController: NewTimerViewController = NewTimerViewController(viewModel: NewTimerViewViewModel(title: "Edit timer")),
+        viewController: NewTimerViewController = NewTimerViewController(viewModel: TimerEditorViewModel(title: "Edit timer")),
         interactor: NewTimerInteractor = NewTimerInteractor(),
         presenter: NewTimerPresenter = NewTimerPresenter(),
         router: NewTimerRouter = NewTimerRouter(),

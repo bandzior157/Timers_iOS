@@ -20,10 +20,11 @@ final class NewTimerViewController: UIViewController, NewTimerViewing {
     var presenter: NewTimerPresenting?
     var alertPresenter: SimpleAlertShowing? = SimpleAlertPresenter()
     
-    init(viewModel: NewTimerViewViewModel? = nil) {
+    private(set) var viewModel: TimerEditorViewModel?
+    
+    init(viewModel: TimerEditorViewModel? = nil) {
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
-        guard let viewModel = viewModel else { return }
-        self.title = viewModel.title
     }
     
     required init?(coder: NSCoder) {
@@ -35,12 +36,17 @@ final class NewTimerViewController: UIViewController, NewTimerViewing {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.tintColor = .systemTeal
         
+        setupTitle()
         setupSaveButton()
         setupCancelButton()
         setupContentViews()
         setupKeyboardDismiss()
                 
         textFieldsController = NewTimerViewControllerTextFieldsController(presenter: presenter, titleTextField: titleTextField, descriptionTextField: descriptionTextField)
+    }
+    
+    private func setupTitle() {
+        title = viewModel?.title
     }
     
     private func setupContentViews() {

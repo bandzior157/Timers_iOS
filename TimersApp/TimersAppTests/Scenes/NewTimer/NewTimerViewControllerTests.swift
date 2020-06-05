@@ -19,9 +19,8 @@ class NewTimerViewControllerTests: XCTestCase {
     }
     
     func test_titleInjectedByViewModel() {
-        let viewModel = NewTimerViewViewModel(title: "some title")
-        let sut = NewTimerViewController(viewModel: viewModel)
-        XCTAssertEqual(sut.title, viewModel.title)
+        let viewModel = TimerEditorViewModel(title: "some title")
+        XCTAssertEqual(makeSUT(viewModel: viewModel).title, viewModel.title)
     }
     
     func test_cancelButton_isSystemCancelButton_placedLeftOnNavigationBar() {
@@ -65,8 +64,8 @@ class NewTimerViewControllerTests: XCTestCase {
     
     // MARK: - Helpers
     
-    private func makeSUT(presenter: NewTimerPresenting? = nil, alertPresenter: SimpleAlertShowing? = nil) -> NewTimerViewController {
-        let sut = NewTimerViewController()
+    private func makeSUT(viewModel: TimerEditorViewModel? = nil, presenter: NewTimerPresenting? = nil, alertPresenter: SimpleAlertShowing? = nil) -> NewTimerViewController {
+        let sut = NewTimerViewController(viewModel: viewModel)
         sut.presenter = presenter
         sut.alertPresenter = alertPresenter
         sut.loadViewIfNeeded()
