@@ -24,19 +24,6 @@ class TimerEditorViewModelFactoryTests: XCTestCase {
     
 }
 
-class FakeTimerEditorViewModelFactory: TimerEditorViewModelFactoryInterface {
-    let newViewModel = TimerEditorViewModel(title: "new", timerTitleText: "new", timerBodyText: "new")
-    let editViewModel = TimerEditorViewModel(title: "edit", timerTitleText: "edit", timerBodyText: "edit")
-    
-    func getNew() -> TimerEditorViewModel {
-        newViewModel
-    }
-    
-    func getEdit(for timer: TimersApp.Timer) -> TimerEditorViewModel {
-        editViewModel
-    }
-}
-
 class ViewControllerFactoryTests: XCTestCase {
     
     private let dummyTimer = TimersApp.Timer(title: "", body: "")
